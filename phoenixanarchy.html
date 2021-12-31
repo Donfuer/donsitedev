@@ -32,36 +32,36 @@
  </style>
 </head>
 <body>
- <div class='presetLight' id='navbarbg'>
+ <div id='navbarbg'>
   <a href='Index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
   <a href='Index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
-  <a href='apply.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Apply to one of our many branches' ><div id='navapply' class='navsidebuttons'>Apply</div></a>
+  <div id='navbarmainlinks'>
+  <a href='apply.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Apply to one of our many branches'><div id='navapply' class='navsidebuttons'>Apply</div></a>
   <a href='gallery.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Selected screenshots of our work'><div id='navgallery' class='navsidebuttons'>Gallery</div></a>
   <a href='history.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='A brief summary of our history'><div id='navhistory' class='navsidebuttons'>History</div></a>
   <a href='leadership.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Our current leadership'><div id='navleadership' class='navsidebuttons'>Leadership</div></a>
-  <div id='navspacer'></div>
-  <hr id='navspacerhr'>
-  <div id='navspacer'></div>
+  </div>
   <a href='https://discord.gg/nzPCyRs' target='_blank' class='navlinktext'  data-bs-toggle="tooltip" data-bs-placement="right" title='Click here to join our public discord'><div id='navdisc' class='navsidebuttons'>Join Discord</div></a>
   <a href='https://www.youtube.com/c/DonFuer' target='_blank' class='navlinktext'  data-bs-toggle="tooltip" data-bs-placement="right" title='Our Youtube channel'><div id='navdisc' class='navsidebuttons'>Youtube</div></a>
   <a href='https://2b2t.miraheze.org/wiki/DonFuer' target='_blank' class='navlinktext'  data-bs-toggle="tooltip" data-bs-placement="right" title='Our 2b2t wiki page'><div id='navdisc' class='navsidebuttons'>2b2t Wiki</div></a>
  </div>
- <input type='button' id='mininavswitch' value='Menu' onclick='mininav()'>
- <div id='mininav'>
- <table><tr>
- <td class='navtdsize'><a href='Index.html' class='navlinktext'><div class='mininavlink'><img class='mininavimg' src='assets/icon.png'><p>Home</p></div></a></td>
- <td class='navtdsize'><a href='apply.html' class='navlinktext'><div class='mininavlink'><img class='mininavimg' src='MiscPics/apply.png'><p>Apply</p></div></a></td>
- </tr><tr>
- <td class='navtdsize'><a href='gallery.html' class='navlinktext'><div class='mininavlink'><img class='mininavimg' src='MiscPics/gallery.png'><p>Gallery</p></div></a></td>
- <td class='navtdsize'><a href='history.html' class='navlinktext'><div class='mininavlink'><img class='mininavimg' src='MiscPics/history.png'><p>History</p></div></a></td>
- </tr><tr>
- <td class='navtdsize'><a href='leadership.html' class='navlinktext'><div class='mininavlink'><img class='mininavimg' src='MiscPics/leadership.png'><p>Leadership</p></div></a></td>
- <td class='navtdsize'><a href='#' class='navlinktext' onclick='mininavoff()'><div class='mininavlink'><img class='mininavimg' src='assets/X.png'><p>Close</p></div></a></td>
- </tr></table>
+ <div id='mininavswitch' onclick='menuclicked()'>
+  <img src='assets/caret-square-down.svg' style='width:100%;height:100%'>
  </div>
- <div id='head'><h1>PhoenixAnarchy Application</h1></div>
- <div id='headscr'><h2>PhoenixAnarchy Application</h2></div>
- <div id='headpush'></div>
+ <ul id='mininav'>
+  <a href='apply.html' class='mna'><li class='mncont'>Apply</li></a>
+  <a href='gallery.html' class='mna'><li class='mncont'>Gallery</li></a>
+  <a href='history.html' class='mna'><li class='mncont'>History</li></a>
+  <a href='leadership.html' class='mna'><li class='mncont'>Leadership</li></a>
+  <li class='mncont' id='mininavsoc' style='margin-bottom:5px'>
+    <a href='https://discord.gg/nzPCyRs'><img class='mnsicon' src='assets/Discord-Logo-Color.svg'></a>
+	<a href='https://www.youtube.com/c/DonFuer'><img class='mnsicon' src='assets/YouTube_full-color_icon_(2017).svg'></a>
+	<a href='https://2b2t.miraheze.org/wiki/DonFuer'><img class='mnsicon' src='assets/2b2t_Logo_Vectorised.svg'></a>
+  </li>
+ </ul>
+
+ <div id='head' style="display:flex;justify-content:center;align-items:center;height:70px;color:white;background-color:var(--transhigh);backdrop-filter:blur(10px);font-family:'Ubuntu',sans-serif;max-width:800px;min-width:200px;border-radius:var(--rad);margin:auto;margin-top:10px;z-index:8;">
+ <h1>PhoenixAnarchy Application</h1></div>
  <div class='container-fluid'>
   <iframe jsname="L5Fo6c" id='appwindow' class="YMEQtf DnR2hf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Google Forms, DonFuer Application Form" src="https://docs.google.com/forms/d/e/1FAIpQLSctbAXk7V1fLgSIhB9Di_oH_PQOlOEGC9cNt2VL7V55_36HDA/viewform?embedded=true" allowfullscreen=""></iframe>
  </div>
