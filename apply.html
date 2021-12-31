@@ -86,7 +86,7 @@
 	   <span class='h2'>9b9t</span>
 	  </div>
 	  <br>
-	  <p>don but like rich</p>
+	   <p id='deleteme'>don but like rich</p><p id='deleteyou'></p>
 	 </div>
 	</a>    
    </div>
@@ -134,5 +134,9 @@
   </div>
  </div>
  <script src='assets/scr.js'></script>
+<script>
+//checks the user agent -- needed for a compatibility test
+document.getElementById('deleteme').innerHTML=navigator.userAgent;
+</script>
 </body>
 </html>
