@@ -137,6 +137,22 @@
 <script>
 //checks the user agent -- needed for a compatibility test
 document.getElementById('deleteme').innerHTML=navigator.userAgent;
+
+//gaming in 4 dimensions
+	let debug=navigator.userAgent;
+	var mobile=0;
+	if (debug.search('iPhone') == -1){
+		document.write('iPhone nope');
+		}else{
+		document.write('iPhone yup');
+		mobile=1;
+		}
+	if (debug.search('Android') == -1){
+		document.write('Android nope');
+		}else{
+		document.write('Android yup');
+		mobile=1;
+		}
 </script>
 </body>
 </html>
