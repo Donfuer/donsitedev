@@ -34,8 +34,8 @@
 </head>
 <body>
 <div id='navbarbg'>
-  <a href='Index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
-  <a href='Index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
+  <a href='index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
+  <a href='index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
   <div id='navbarmainlinks'>
   <a href='apply.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Apply to one of our many branches'><div id='activesidebutton' class='navsidebuttons'>Apply</div></a>
   <a href='gallery.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Selected screenshots of our work'><div id='navgallery' class='navsidebuttons'>Gallery</div></a>
@@ -49,7 +49,8 @@
  <div id='mininavswitch' onclick='menuclicked()'>
   <img src='assets/caret-square-down.svg' style='width:100%;height:100%'>
  </div>
- <ul id='mininav'>
+ <ul id='mininav' style='display:none'>
+  <a href='index.html' class='mna'><li class='mncont'>Home</li></a>
   <a href='apply.html' class='mna'><li class='mncont'>Apply</li></a>
   <a href='gallery.html' class='mna'><li class='mncont'>Gallery</li></a>
   <a href='history.html' class='mna'><li class='mncont'>History</li></a>
@@ -63,6 +64,7 @@
 
  <div id='head' style="display:flex;justify-content:center;align-items:center;height:70px;color:white;background-color:var(--transhigh);backdrop-filter:blur(10px);font-family:'Ubuntu',sans-serif;max-width:800px;min-width:200px;border-radius:var(--rad);margin:auto;margin-top:10px;z-index:8;">
  <h1>Apply</h1></div>
+ <div id='titlespacer'></div>
 <div id='tablePositioner' class='container-fluid'>
   <div class='row'>
   <div class='col-md-2'></div>
@@ -86,7 +88,7 @@
 	   <span class='h2'>9b9t</span>
 	  </div>
 	  <br>
-	  <p id='useragentdisplay'></p>
+	  <p id='useragentdisplay'>After an extended absence from 9b9t, Donfuer is back and ready for more. This server is best for those who want to play on an anarchy server with us, without as much group complexity as our 2b2t branch.</p>
 	 </div>
 	</a>    
    </div>
@@ -134,7 +136,7 @@
   </div>
  </div>
  <script>
- document.getElementById('useragentdisplay').innerHTML=navigator.userAgent;
+ //document.getElementById('useragentdisplay').innerHTML=navigator.userAgent;
  </script>
  <script src='assets/scr.js'></script>
 </body>

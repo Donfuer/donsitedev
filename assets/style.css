@@ -25,6 +25,8 @@ backdrop-filter:blur(10px);z-index:12;}
 border-left:2px solid var(--transhigh);width:98%;transition-duration:0.1s;transition-timing-function:ease-in-out;}
 .navsidebuttons:hover{background-color:var(--offblack);color:white;transform:translate(1px,2px);}
 #activesidebutton{background-color:var(--transdiv);}#activesidebutton:hover{background-color:var(--offblack);}
+
+#titlespacer{height:70px;display:block;position:relative;/*background:#00000099;*/}
 .servercard{background-color:var(--offwhite);color:black;
 padding:10px;backdrop-filter:blur(3px);width:100%;height:300px;
 margin-bottom:30px;border-radius:var(--rad);overflow:auto;
@@ -33,7 +35,7 @@ margin-bottom:30px;border-radius:var(--rad);overflow:auto;
 transform:translate(0px,10px);transition-duration:0.2s;transition-timing-function:ease-in-out;
 }
 .appcontroller{width:50%;}
-#appwindow{height:2400px;width:100%;}
+#appwindow{height:75vh;width:100%;}
 
 #mininavswitch{display:flex;flex-flow:column nowrap;justify-content:space-around;padding:10px;
 position:fixed;top:0px;left:0px; z-index:13;

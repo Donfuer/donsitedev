@@ -28,13 +28,12 @@
  <title>Donfuer.com | Stoneworks</title>
  <style>
   body{background-image:url("assets/applybg.png");}
-  #appwindow{height:2100px;width:100%;}
  </style>
 </head>
 <body>
  <div id='navbarbg'>
-  <a href='Index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
-  <a href='Index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
+  <a href='index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
+  <a href='index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
   <div id='navbarmainlinks'>
   <a href='apply.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Apply to one of our many branches'><div id='navapply' class='navsidebuttons'>Apply</div></a>
   <a href='gallery.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Selected screenshots of our work'><div id='navgallery' class='navsidebuttons'>Gallery</div></a>
@@ -48,7 +47,8 @@
  <div id='mininavswitch' onclick='menuclicked()'>
   <img src='assets/caret-square-down.svg' style='width:100%;height:100%'>
  </div>
- <ul id='mininav'>
+ <ul id='mininav' style='display:none'>
+  <a href='index.html' class='mna'><li class='mncont'>Home</li></a>
   <a href='apply.html' class='mna'><li class='mncont'>Apply</li></a>
   <a href='gallery.html' class='mna'><li class='mncont'>Gallery</li></a>
   <a href='history.html' class='mna'><li class='mncont'>History</li></a>
@@ -62,6 +62,7 @@
 
  <div id='head' style="display:flex;justify-content:center;align-items:center;height:70px;color:white;background-color:var(--transhigh);backdrop-filter:blur(10px);font-family:'Ubuntu',sans-serif;max-width:800px;min-width:200px;border-radius:var(--rad);margin:auto;margin-top:10px;z-index:8;">
  <h1>Stoneworks Application</h1></div>
+ <div id='titlespacer'></div>
  <div class='container-fluid'>
   <iframe jsname="L5Fo6c" id='appwindow' class="YMEQtf DnR2hf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Google Forms, DonFuer Spawn Rangers Application Form" src="https://docs.google.com/forms/d/e/1FAIpQLSdZS3ppnm1n2cmFnEjZqqRmXKhNESbBYpvrMrYKk8d-nRp4AQ/viewform?embedded=true" allowfullscreen=""></iframe>
  </div>

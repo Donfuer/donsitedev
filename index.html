@@ -25,9 +25,16 @@
  <meta itemprop="thumbnailUrl" content="assets/icon.png">
  <link rel="icon" href='assets/icon.png' type="image/x-icon">
  <link rel='stylesheet' href='assets/style.css'>
- <title>Donfuer.com | 2b2t</title>
+ <title>Donfuer.com | Home</title>
  <style>
-  body{background-image:url("assets/applybg.png");}
+  body{background-image:url("assets/indexbg.png");}
+  .servercard{height:100px;width:75%;margin:auto;margin-bottom:20px;}
+  .videotable{width:100%;}
+  .videocontclass{aspect-ratio:16/9;}
+  #videosqueezer{width:210px;}
+  .cardlogo{height:100%;padding:10px;}
+  .h3{vertical-align:middle;-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+  .alert{width:50%;margin:auto;text-align:center;}
  </style>
 </head>
 <body>
@@ -61,11 +68,47 @@
  </ul>
 
  <div id='head' style="display:flex;justify-content:center;align-items:center;height:70px;color:white;background-color:var(--transhigh);backdrop-filter:blur(10px);font-family:'Ubuntu',sans-serif;max-width:800px;min-width:200px;border-radius:var(--rad);margin:auto;margin-top:10px;z-index:8;">
- <h1>2b2t Spawn Rangers Application</h1></div>
+ <h1>Welcome to Donfuer</h1></div>
  <div id='titlespacer'></div>
- <div class='container-fluid'>
-  <iframe jsname="L5Fo6c" id='appwindow' sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Google Forms, DonFuer Application Form" src="https://docs.google.com/forms/d/e/1FAIpQLSd6j8_tkTxyQ8u5NwR_S6G6GGWo5L2Z1gtr7BxXUl3CEtg2oQ/viewform?embedded=true" allowfullscreen=""></iframe>
- </div>
+ 
+ <a href='newIndex.html'><div class="alert alert-info">
+  <strong>Notice:</strong> Please click this message to try the new and improved homepage. This one pisses me off.
+</div></a>
+
+<table class='videotable'><tr>
+ <td id='videosqueezer'></td>
+ <td><div class='videocontclass'id='videocont'>
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K-fzy1o7RA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div></td> <!-- MAKE the Donfuer 20 timelapse a background. https://www.youtube.com/watch?v=QZgnUbMuFL0 -->
+ <td><div class='videocontclass'id='videocont2'>
+ <iframe width="100%" height="100%" src="https://www.youtube.com/embed/icVqvRXOhZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div></td>
+</tr></table>
+<div style='height:10px;'></div>
+ <div id='actionsflex'>
+   <a href='apply.html' style='text-decoration:none;'><div class='servercard'>
+    <span class='h3'>Apply to Donfuer...</span>
+   </div></a>
+   <a href='gallery.html' style='text-decoration:none;'><div class='servercard'>
+    <span class='h3'>View our gallery...</span>
+   </div></a>
+   <a href='history.html' style='text-decoration:none;'><div class='servercard'>
+    <span class='h3'>Learn our history...</span>
+   </div></a>
+   <a href='leadership.html' style='text-decoration:none;'><div class='servercard'>
+    <span class='h3'>Know our leadership...</span>
+   </div></a>
+</div>
 <script src='assets/scr.js'></script>
+<script>
+var d=setInterval(cum,90);
+function cum(){
+if (document.getElementById('mininavswitch').style.display=='none'){
+ document.getElementById('videosqueezer').style.width='210px';
+}else{
+ document.getElementById('videosqueezer').style.width='1%';
+ }
+ }
+</script>
 </body>
 </html>

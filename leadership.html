@@ -29,13 +29,15 @@
  <style>
   body{background-image:url("assets/leadershipbg.png");}
   .links{text-decoration:none;color:black;} .links:hover{color:#080808}
-  .card{overflow:auto;width:100%;text-align:center;background-color:var(--offwhite2);height:888px;margin-top:20px;backdrop-filter:blur(3px);}
+  .card{overflow:auto;width:100%;text-align:center;background:var(--offwhite2);margin-top:20px;backdrop-filter:blur(3px);}
+  #blurbwindow{padding:15px;font-size:1.2em;}
+  .btn{width:95%;margin:auto;}
  </style>
 </head>
 <body>
  <div id='navbarbg'>
-  <a href='Index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
-  <a href='Index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
+  <a href='index.html'><img src='assets/logo.png' alt='Donfuer Logo' id='navbarimg'></a>
+  <a href='index.html' class='navlinktext'><p id='navbarlinkname'>Donfuer</p></a>
   <div id='navbarmainlinks'>
   <a href='apply.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Apply to one of our many branches'><div id='navapply' class='navsidebuttons'>Apply</div></a>
   <a href='gallery.html' class='navlinktext' data-bs-toggle="tooltip" data-bs-placement="right" title='Selected screenshots of our work'><div id='navgallery' class='navsidebuttons'>Gallery</div></a>
@@ -49,7 +51,8 @@
  <div id='mininavswitch' onclick='menuclicked()'>
   <img src='assets/caret-square-down.svg' style='width:100%;height:100%'>
  </div>
- <ul id='mininav'>
+ <ul id='mininav' style='display:none'>
+  <a href='index.html' class='mna'><li class='mncont'>Home</li></a>
   <a href='apply.html' class='mna'><li class='mncont'>Apply</li></a>
   <a href='gallery.html' class='mna'><li class='mncont'>Gallery</li></a>
   <a href='history.html' class='mna'><li class='mncont'>History</li></a>
@@ -63,48 +66,110 @@
 
  <div id='head' style="display:flex;justify-content:center;align-items:center;height:70px;color:white;background-color:var(--transhigh);backdrop-filter:blur(10px);font-family:'Ubuntu',sans-serif;max-width:800px;min-width:200px;border-radius:var(--rad);margin:auto;margin-top:10px;z-index:8;">
  <h1>Leadership</h1></div>
+ <div id='titlespacer'></div>
  <div class='container-fluid'>
  <div class='row'>
   <div class='col-sm-2'></div>
   <div class='col-sm-2'>
-   <a href='https://mine.ly/D_loaded.1' target='_blank' class='links'><div class='card'>
+   <div class='card'>
     <img class='card-img-top' src='MiscPics/D_Loaded.png' alt='D_Loaded' style='width:100%'>
 	<div class='card-body'>
 	 <h4 class='card-title'>D_loaded</h4>
-	 <p class='card-text'>In August of 2013, D_loaded logged on to his new friend Ben's Minecraft server. It was here that he built the first Donfuer. The city was immediately griefed but the name, a supposed mistranslation of "Father's Gift", stuck and became the name for all the large bases made after. The Donfuerian empire grew slowly over the years as cities rose and fell on many different servers. D_loaded still is in Donfuer today, as its longest serving member.</p>
+	 <button onclick='popup(1)' class='btn btn-primary'>Information</button>
 	</div>
    </div></a>
   </div>
   <div class='col-sm-2'>
-   <a href='https://mine.ly/dragonworm.1' target='_blank' class='links'><div class='card'>
+   <div class='card'>
     <img class='card-img-top' src='MiscPics/Dragonworm.png' alt='Dragonworm' style='width:100%'>
 	<div class='card-body'>
 	 <h4 class='card-title'>Dragonworm</h4>
-	 <p class='card-text'>Dragonworm got Minecraft when he was a kid in 2010. He learned about 2b2t from his IRL friend MikelAx7, both of them joining the group Highland. Things would quickly sour with Highland, and soon after he joined Donfuer. Dragonworm quickly became an elder after joining by proving his loyalty to D_loaded in a series of crusades on MozartRealms. Since then, he has managed the online presence of Donfuer. He is currently the 3rd oldest Donfuer member that is still around.</p>
+	 <button onclick='popup(2)' class='btn btn-primary'>Information</button>
 	</div>
    </div></a>
   </div>
   <div class='col-sm-2'>
-   <a href='https://mine.ly/DirectorJohnson.1' target='_blank' class='links'><div class='card'>
+   <div class='card'>
     <img class='card-img-top' src='MiscPics/MikelAx7.png' alt='MikelAx7' style='width:100%'>
 	<div class='card-body'>
-	 <h4 class='card-title'>MikelAx7</h4>
-	 <p class='card-text'>In April of 2017, a personal friend of MikelAx7 showed him videos about 2b2t. He was mildly interested but dismissive. 3 hours of playtime and 11 hours of queue later, he was hooked. After showing dragonworm the server weeks later, he followed him to Highland and later Donfuer. His membership record was spotty but now he fully committed his playtime to the success of Donfuer. He also helps to runs the website, creates videos for the YouTube channel, and is a developer of the DonHack client.</p>
+	 <h4 class='card-title'>DirectorJohnson</h4>
+	 <button onclick='popup(3)' class='btn btn-primary'>Information</button>
 	</div>
    </div></a>
   </div>
   <div class='col-sm-2'>
-   <a href='https://mine.ly/iAmZeiss.1' target='_blank' class='links'><div class='card'>
+   <div class='card'>
     <img class='card-img-top' src='MiscPics/iAmZeiss.png' alt='iAmZeiss' style='width:100%'>
 	<div class='card-body'>
 	 <h4 class='card-title'>iAmZeiss</h4>
-	 <p class='card-text'>Zeiss joined 2b2t in mid 2020, soon joining a small group by the name of Crimson Star. He would build at many bases there, including Cumzone 2 and Adamantium. Zeiss would eventually become a leader, but then Crimson Star would fall inactive, and dissolve. Around this time, he joined Donfuer, and quickly rose up the ranks. He would merge his other group, Fate, into the Donfuer Spawn Rangers. After a stint with bad leaders within the Spawn Rangers, Zeiss would be offered the position of leadership, which he stepped up and took, becoming the newest leader in Donfuer.</p>
+	 <button onclick='popup(4)' class='btn btn-primary'>Information</button>
 	</div>
-   </div></a>
+   </div>
+  </div>
+  <div class='col-sm-2'>
+   <div class='card'>
+    <img class='card-img-top' src='MiscPics/TimeOfWheel.png' alt='TimeOfWheel' style='width:100%'>
+	<div class='card-body'>
+	 <h4 class='card-title'>TimeOfWheel</h4>
+	 <button onclick='popup(5)' class='btn btn-primary'>Information</button>
+	</div>
+   </div>
+  </div>
+ </div>
+<!--
+ <div class='row'>
+  <div class='col-sm-2'></div>
+  <div class='col-sm-2'></div>
+  <div class='col-sm-2'>
+   <div class='card'>
+    <img class='card-img-top' src='MiscPics/TimeOfWheel.png' alt='TimeOfWheel' style='width:100%'>
+	<div class='card-body'>
+	 <h4 class='card-title'>TimeOfWheel</h4>
+	 <button onclick='popup(5)' class='btn btn-primary'>Information</button>
+	</div>
+   </div>
+  </div>
+  <div class='col-sm-2'></div>
+  <div class='col-sm-2'></div>
+  <div class='col-sm-2'></div>
+ </div>
+ -->
+ <div class='row'>
+  <div class='col-sm-2'></div>
+  
+  <div class='col-sm-8'>
+   <div id='blurbwindow' class='card'>
+    <p id='blurb'>Click one of the information buttons to get started!</p>
+	<a id='ldlnk' class='btn btn-danger' href='#' target='_blank'>NameMC link</a>
+   </div>
   </div>
   <div class='col-sm-2'></div>
  </div>
  </div>
+<script>
+var blurb=document.getElementById('blurb'), a=document.getElementById('ldlnk');
+function popup(x){
+if (x==1){
+	blurb.innerHTML='In August of 2013, D_loaded logged on to his new friend Ben\'s Minecraft server. It was here that he built the first Donfuer. The city was immediately griefed but the name, a supposed mistranslation of \"Father\'s Gift\", stuck and became the name for all the large bases made after. The Donfuerian empire grew slowly over the years as cities rose and fell on many different servers. D_loaded still is in Donfuer today, as its longest serving member.';
+	a.href='https://mine.ly/D_loaded.1';
+	}else{
+	if (x==2){
+		blurb.innerHTML='Dragonworm got Minecraft when he was a kid in 2010. He learned about 2b2t from his IRL friend MikelAx7, both of them joining the group Highland. Things would quickly sour with Highland, and soon after he joined Donfuer. Dragonworm quickly became an elder after joining by proving his loyalty to D_loaded in a series of crusades on MozartRealms. Since then, he has managed the online presence of Donfuer. He is currently the 3rd oldest Donfuer member that is still around.';
+		a.href='https://mine.ly/dragonworm.1';
+		}else{
+		if (x==3){
+			blurb.innerHTML='In April of 2017, a personal friend of MikelAx7 showed him videos about 2b2t. He was mildly interested but dismissive. 3 hours of playtime and 11 hours of queue later, he was hooked. After showing dragonworm the server weeks later, he followed him to Highland and later Donfuer. His membership record was spotty but now he fully committed his playtime to the success of Donfuer. He also created the old website and is a developer of the DonHack client. He recently changed his IGN to DirectorJohnson.';
+			a.href='https://mine.ly/DirectorJohnson.1';
+			}else{
+			if (x==4){
+				blurb.innerHTML='Zeiss joined 2b2t in mid 2020, soon joining a small group by the name of Crimson Star. He would build at many bases there, including Cumzone 2 and Adamantium. Zeiss would eventually become a leader, but then Crimson Star would fall inactive, and dissolve. Around this time, he joined Donfuer, and quickly rose up the ranks. He would merge his other group, Fate, into the Donfuer Spawn Rangers. After a stint with bad leaders within the Spawn Rangers, Zeiss would be offered the position of elder, which he stepped up and took, becoming the newest elder in Donfuer.';
+				a.href='https://mine.ly/iAmZeiss.1';
+				}else{
+				if (x==5){
+				blurb.innerHTML='TimeOfWheel has yet to write his elder blurb.';
+				a.href='https://mine.ly/TimeofWheel.1';
+				}}}}}}
+</script>
 <script src='assets/scr.js'></script>
 </body>
 </html>
