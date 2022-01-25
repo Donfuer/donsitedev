@@ -1,5 +1,12 @@
 # donsitedev
 Donfuer site to catch bugs and show off to people
+
+
+# log3
+rewriting the site a third time lol
+redesigning the layout and stuff so that it is better designed. Much to come, this is a tiny incremental update
+
+
 # log2
 tried to fix some bugs, made some things worse, some things better
 - Index.html is aggravating, I will make a new layout for it since it was also not too well designed anyways.
@@ -22,9 +29,7 @@ TODO:
 - Change apply page to have details about the branch, leaders, member count, individual history, and extra application details if necessary
   
 LONG-TERM TODO:
-  
-- cookies on the site for anonymous metrics such as average visitor location, average whatever window.navigator info we want, etc
-- separate pages for mobile users - gallery.php and any other pages that are really heavy, maybe even use XMLHttpRequest on the desktop site
+
 - a way that D can edit or add stuff to the site without having to know what the fuck I was thinking at 1:30 am cst on January 8th, 2022 when I wrote something the way I did
 # For the old changelogs, reference readme.txt
 
