@@ -1,3 +1,4 @@
+<<<<<<< HEAD:oldSite/apply.html
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -140,4 +141,165 @@
  </script>
  <script src='assets/scr.js'></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donfuer | Apply</title>
+    <link rel="stylesheet" href="assets/styl.css">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <style>
+        .main h2{
+            text-align:center;font-size:1.5rem;
+        }
+        .main p{
+            width:90%;margin:auto;text-align:center;height:8rem;overflow:auto;
+        }.col3grid div::after,.col2grid div::after{
+            content:'';width:100%;height:100px;display:block;position:relative;
+        }
+        .rb-p{
+            font-size:1.5em;display:block;margin:auto;margin-bottom:20px;position:absolute;bottom:10px;left:10px;right:10px;z-index:3;
+        }
+        .rb-p::before,.rb-p::after{
+            content:'';display:block;position:relative;width:100%;height:15px;
+        }
+        @media only screen and (max-width:1780px){
+            .col3grid p{
+                height:12rem;
+            }
+        }
+        @media only screen and (max-width:550px){
+            #pa{
+                height:12rem;
+            }
+        }
+        @media only screen and (max-width:1300px){
+            .col3grid p{
+                height:8rem;
+            }
+        }
+        #appframe{
+            width:100%;height:100%;
+        }
+        #app{
+            display:none;
+            position:fixed;top:0px;bottom:0px;left:0px;right:0px;
+            background:var(--darktrans);backdrop-filter:blur(6px);
+        }
+        #appbuttons{
+            display:none;position:fixed;z-index:13;top:5px;right:5px;flex-flow:row nowrap;
+        }
+        .rb-a{
+            border-right:2px solid transparent;border-radius:var(--rad) 0 0 var(--rad);
+        }
+        .rb-a:hover{
+            border-right:2px solid var(--darkobs);transform: translate(-1px,2px);border-left:0px solid transparent;
+        }
+        #appbuttons a::before,#appbuttons a::after{
+            content:'';display:block;width:75px;height:10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class='rawbg'>
+            <a href='index.html'>Home</a>
+            <a href='apply.html'>Apply</a>
+            <a href='gallery.html'>Gallery</a>
+            <a href='history.html'>History</a>
+            <a href='leadership.html'>Leadership</a>
+            <div id="navsep"></div>
+            <a href='https://discord.gg/nzPCyRs'>Join Discord</a>
+            <a href='https://www.youtube.com/c/DonFuer'>Official Youtube</a>
+            <a href='https://2b2t.miraheze.org/wiki/DonFuer'>2b2t Wiki</a>
+        </nav>
+        <div class='header rawbg' id='hed'>
+            <div id='borg'></div>
+            Apply</div>
+        <div class='headspac'></div>
+    </header>
+    <noscript>
+        <h1>YOU MUST ENABLE JAVASCRIPT to use this page as of right now.</h1>
+    </noscript>
+    <div class="main">
+        <div class='col2grid rawbg'>
+            <div>
+                <h2>Apply for 2b2t Spawn Rangers</h2>
+                <p>DonFuer joined 2b2t in November 2016. Many of DonFuer's best bases have been on this server, including DonFuer 10, 11, 12, 18, 20, 21, and 22! Although its been through many ups and downs, the 2b2t DonFuer branch is the flagship of the group!</p>
+                <a class='rawbutton rb-p' href="apply.html?app=2b2t">Apply Now</a>
+            </div>
+            <div>
+                <h2>Apply for PhoenixAnarchy</h2>
+                <p id='pa'>The Donfuer PhoenixAnarchy branch is the best for those who seek an anarchy experience but also want access to new features. PhoenixAnarchy is the biggest 1.18 anarchy server and averages 30-40 players on at a time, even maintaining 20 tps despite having a non-strict anticheat.</p>
+                <a class='rawbutton rb-p' href="apply.html?app=phoenixanarchy">Apply Now</a>
+            </div>
+        </div>
+        <div class="col3grid rawbg">
+            <div>
+                <h2>Apply for Stoneworks</h2>
+                <p>One of the newest editions to the DonFuer Family, the Stoneworks server offers DonFuerians a unique roleplay experience, reminiscent of DonFuer's earlier days. If anarchy isn't for you this is the place to go.</p>
+                <a class='rawbutton rb-p' href="apply.html?app=stoneworks">Apply Now</a>
+            </div>
+            <div>
+                <h2>Apply for 9b9t</h2>
+                <p>After an extended absence from 9b9t, Donfuer is back and ready for more. This server is best for those who want to play on an anarchy server with us, without as much group complexity as our 2b2t branch.</p>
+                <a class='rawbutton rb-p' href="apply.html?app=9b9t">Apply Now</a>
+            </div>
+            <div>
+                <h2>Apply for Minewind</h2>
+                <p>Donfuer Minewind Branch is our newest branch, featuring multiple maps, player tp, and too many other special gameplay features to mention here. Mostly focused on megabuilds, Minewind is for those talented builders looking for a challenge.</p>
+                <a class='rawbutton rb-p' href="apply.html?app=minewind">Apply Now</a>
+            </div>
+        </div>
+    </div>
+    <!--Start of Apply page-->
+    <div id='appbuttons'>
+        <a class='rawbutton rb-a' href='apply.html'>Back</a>
+        <a class='rawbutton' href='#' onclick="location.reload()">Reload</a> <!--tried to make a scroll to top but too lazy rn to use buttons instead of links-->
+    </div>
+    <div class="appwindow" id="app">
+        <iframe jsname="L5Fo6c" id='appframe' sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Google Forms, DonFuer Application Form" src="#" allowfullscreen=""></iframe>
+    </div>
+<script>
+    const ab=document.getElementById('appbuttons');
+    const hed=document.getElementById('hed');
+    const app=document.getElementById('app');
+    const appframe=document.getElementById('appframe');
+    var url=window.location.href;
+    url=url.slice(url.lastIndexOf("?"),url.length);
+    if (url=="?app=2b2t"){
+        ab.style.display="flex";
+        hed.style.display="none";
+        app.style.display="block";
+        appframe.src="https://docs.google.com/forms/d/e/1FAIpQLSd6j8_tkTxyQ8u5NwR_S6G6GGWo5L2Z1gtr7BxXUl3CEtg2oQ/viewform?embedded=true";
+    }else if (url=="?app=phoenixanarchy"){
+        ab.style.display="flex";
+        hed.style.display="none";
+        app.style.display="block";
+        appframe.src="https://docs.google.com/forms/d/e/1FAIpQLSctbAXk7V1fLgSIhB9Di_oH_PQOlOEGC9cNt2VL7V55_36HDA/viewform?embedded=true";
+    }else if (url=="?app=stoneworks"){
+        ab.style.display="flex";
+        hed.style.display="none";
+        app.style.display="block";
+        appframe.src="https://docs.google.com/forms/d/e/1FAIpQLSdZS3ppnm1n2cmFnEjZqqRmXKhNESbBYpvrMrYKk8d-nRp4AQ/viewform?embedded=true";
+    }else if (url=="?app=9b9t"){
+        ab.style.display="flex";
+        hed.style.display="none";
+        app.style.display="block";
+        appframe.src="https://docs.google.com/forms/d/e/1FAIpQLSfj0F5rn6dvrEVnnZOP5qW898CTCRoZ9ZDSBtkAAp1-icx77w/viewform?embedded=true"
+    }else if (url=="?app=minewind"){
+        ab.style.display="flex";
+        hed.style.display="none";
+        app.style.display="block";
+        appframe.src="https://docs.google.com/forms/d/e/1FAIpQLSf9zyJwdq5jW3yPA2NjZdMhXXX6WEVHaqzA1igGMB29kajacA/viewform?embedded=true"
+    }
+</script>
+<!--
+<script src='assets/debug_screen_size.js'></script>
+-->
+</body>
+>>>>>>> 20f1ad40a6a79be6799d376eb7f02c0d8402620f:apply.html
 </html>

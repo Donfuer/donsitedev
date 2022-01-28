@@ -1,3 +1,4 @@
+<<<<<<< HEAD:oldSite/assets/scr.js
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
@@ -50,3 +51,6 @@ function scrollFunction() {
 	head.style=headstyle1;
   }
 }
+=======
+//site by volker1
+>>>>>>> 20f1ad40a6a79be6799d376eb7f02c0d8402620f:assets/scr.js
