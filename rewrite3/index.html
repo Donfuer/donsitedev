@@ -8,25 +8,37 @@
     <link rel="stylesheet" href="assets/styl.css">
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <style>
-        .col2grid div{
-            aspect-ratio:16/9;
+        body{
+            background:black;
         }
         .col2grid h2{
             text-align:center;font-size:1.5rem;
         }
-
+        .col2grid div{
+            background:var(--darkosc);backdrop-filter:blur(5px);color:white;
+        }
         .col2grid a{
             font-size:1.5em;display:block;margin:auto;width:90%;margin-bottom:20px;
         }
         .col2grid a::before,.col2grid a::after{
             content:'';display:block;position:relative;width:100%;height:15px;
         }
+        .med{
+            aspect-ratio:16/9;
+        }
+        #bgexp{
+            display:block;position:fixed;top:0;left:0;right:0;bottom:0;
+            background:url(assets/index/EmbeddedImage.webp);
+        }
+        #mein{
+            transition-duration:0.3s;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav class='rawbg'>
-            <a href='index.html'>Home</a>
+        <nav class='rawbg' id='nav'>
+            <a id="activeNavLink" href='index.html'>Home</a>
             <a href='apply.html'>Apply</a>
             <a href='gallery.html'>Gallery</a>
             <a href='history.html'>History</a>
@@ -36,12 +48,16 @@
             <a href='https://www.youtube.com/c/DonFuer'>Official Youtube</a>
             <a href='https://2b2t.miraheze.org/wiki/DonFuer'>2b2t Wiki</a>
         </nav>
-        <div class='header rawbg'>Home</h1></div>
+        <div class='header rawbg'>
+            <div id='borg' onclick="navtoggle()"></div>
+        Home
+    </div>
         <div class='headspac'></div>
     </header>
-    <div class='main rawbg'>
+    <div id="bgexp" style="opacity:1;"></div>
+    <div id='mein' class='main'>
         <div class="col2grid">
-            <div>
+            <div class='med'>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K-fzy1o7RA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div>
@@ -50,7 +66,7 @@
                 <a class='rawbutton' href='history.html'>Our History</a>
                 <a class='rawbutton' href='leadership.html'>Our Leadership</a>
             </div>
-            <div>
+            <div class='med'>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/icVqvRXOhZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div>
@@ -66,5 +82,6 @@
             </div>
         </div>
     </div>
+<script src='assets/scr.js'></script>
 </body>
 </html>

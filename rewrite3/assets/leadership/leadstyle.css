@@ -1,0 +1,73 @@
+
+h2{
+    text-align:center;
+}
+.elders,.leadFlex{
+    display:flex;position:relative;flex-flow:row wrap;justify-content:space-around;
+    text-align:center;
+}
+.elders div{
+    min-width:200px;
+}
+.col3grid .rawbg{
+    padding:0px;
+}
+.elders{
+    box-sizing:border-box;padding:3%;margin:3%;border-radius:var(--rad);
+}
+.expltxt{
+    padding:3%;margin:3%;border-radius:var(--rad);text-align:center;
+}
+button{
+    width:100%;height:2rem;
+}
+.elders button{
+    width:80%;
+}
+@media only screen and (max-width:1680px){
+    .main{
+        width:97%
+    }
+    .header{
+        left:0px;right:0px;border-radius:0;
+    }
+    #borg{
+        display:block;
+    }
+    nav{
+        display:none;
+    }
+}
+h1{
+    text-align:center;
+}
+#iw{
+    display:none;position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:16;
+    background:var(--darktrans);backdrop-filter:blur(5px);
+}
+#infoWindow{
+    display:none;position:fixed;top:10%;left:20%;right:20%;z-index:25;
+    box-sizing:border-box;padding:30px;font-size:1.2rem;
+    background:var(--darktrans);color:white;
+}
+#infoWindow button{
+    height:3rem;font-size:1.1rem;
+    display:block;width:90%;margin:auto;margin-top:30px;
+}
+#infoWindow a{
+    width:90%;margin:auto;display:block;
+}
+#infoWindow a::before,#infoWindow a::after{
+    content:'';display:block;position:relative;width:90%;height:0.9rem;background:transparent;
+}
+@media only screen and (max-width:800px){
+    #infoWindow{
+        top:0px;bottom:0px;left:0px;right:0px;
+        font-size:1rem;
+    }
+}
+@media only screen and (max-height:800px){
+    #infoWindow{
+        font-size:1rem;
+    }
+}
