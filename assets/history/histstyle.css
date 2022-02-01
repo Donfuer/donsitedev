@@ -1,5 +1,28 @@
-
 .hist{
-    display:grid;grid-template-columns: 32% 32% 32%;
-    grid-gap:1%;
+    display:grid;grid-template-columns: 45% 10% 45%;
+    column-gap:1%;
+}
+.divider{
+    background: white url(image.svg) no-repeat center center;
+    min-height:200px;
+}
+.divider p{
+    background:white;text-align:center;margin:auto;
+}
+.histcontent{
+    max-height:160px;border-radius:var(--rad);
+}
+/*
+.histcontent::before{
+    content:'';display:block;position:absolute;top:0px;bottom:0px;left:0px;right:0px;
+    background:linear-gradient(transparent,#FFFFFF69,#FFFFFF)
+}
+.histcontent::after{
+    content:'\\/ \\/';display:block;position:absolute;bottom:0px;right:0px;left:0px;
+    color:black;text-align:center;
+}
+*/
+
+.histcontent p{
+    width:90%;margin:auto;margin-top:1%;
 }
