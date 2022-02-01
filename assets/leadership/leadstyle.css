@@ -9,7 +9,7 @@ h2{
 .elders div{
     min-width:200px;
 }
-.col3grid .rawbg{
+.col2grid .rawbg{
     padding:0px;
 }
 .elders{
@@ -24,6 +24,7 @@ button{
 .elders button{
     width:80%;
 }
+/*
 @media only screen and (max-width:1680px){
     .main{
         width:97%
@@ -38,6 +39,7 @@ button{
         display:none;
     }
 }
+*/
 h1{
     text-align:center;
 }
@@ -60,6 +62,7 @@ h1{
 #infoWindow a::before,#infoWindow a::after{
     content:'';display:block;position:relative;width:90%;height:0.9rem;background:transparent;
 }
+/*
 @media only screen and (max-width:800px){
     #infoWindow{
         top:0px;bottom:0px;left:0px;right:0px;
@@ -71,3 +74,4 @@ h1{
         font-size:1rem;
     }
 }
+*/

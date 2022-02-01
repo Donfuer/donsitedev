@@ -3,6 +3,7 @@ const win = document.getElementById("infoWindow");
 const name = document.getElementById("infoName");
 const blurb = document.getElementById("infoBlurb");
 const isroot = document.getElementById("infoSoc");
+
 function show(input) {
     //fml
     if (input == "D_loaded"){
@@ -51,11 +52,6 @@ function show(input) {
         blurb.innerHTML = AgentoftheCCP.blurb;
         isroot.href = AgentoftheCCP.namemc;
     }
-    else if (input == "Aerodin"){
-        name.innerHTML = Aerodin.name;
-        blurb.innerHTML = Aerodin.blurb;
-        isroot.href = Aerodin.namemc;
-    }
     else if (input == "Eccentri"){
         name.innerHTML = Eccentri.name;
         blurb.innerHTML = Eccentri.blurb;
@@ -75,7 +71,6 @@ hide = () => {
     win.style.display="none";
     winblur.style.display="none";
 }
-
 //const args = commandBody.split(' ');
 const D_loaded = {
     name:"D_loaded",
@@ -121,11 +116,6 @@ const AgentoftheCCP = {
     name: "AgentoftheCCP",
     blurb:"UNSET",
     namemc:"https://mine.ly/AgentoftheCCP.1"
-}
-const Aerodin = {
-    name: "Aerodin",
-    blurb:"UNSET",
-    namemc:"https://mine.ly/Aerodin.1"
 }
 const Eccentri = {
     name: "Eccentri",

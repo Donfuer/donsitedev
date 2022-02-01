@@ -5,7 +5,7 @@
 }
 .main p{
     width:90%;margin:auto;text-align:center;height:10rem;margin-bottom:50px;
-}.col3grid div::after{
+}.col2grid div::after{
     content:'';width:100%;height:100px;display:block;position:relative;
 }
 .rb-p{
@@ -14,7 +14,7 @@
 .rb-p::before,.rb-p::after{
     content:'';display:block;position:relative;width:100%;height:15px;
 }
-.rawbg,.col3grid div{
+.rawbg,.col2grid div{
     background:var(--darkosc);backdrop-filter:blur(5px);color:white;
 }
 
@@ -37,9 +37,6 @@
 }
 .rb2{
     bottom:100px;
-}
-#endbuttons{
-    min-height:250px;
 }
 #appbuttons a::before,#appbuttons a::after{
     content:'';display:block;width:75px;height:10px;

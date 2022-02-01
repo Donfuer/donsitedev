@@ -18,7 +18,7 @@ body{
 }
 #bgexp{
     display:block;position:fixed;top:0;left:0;right:0;bottom:0;
-    background:url(assets/index/EmbeddedImage.webp);
+    background:url(EmbeddedImage.webp);
 }
 #mein{
     transition-duration:0.3s;

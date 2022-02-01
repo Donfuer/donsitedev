@@ -26,3 +26,13 @@ navtoggle = () => {
     }
 
 }
+var dc = 0;
+dragonClick = () => {
+    if (dc == 0){
+        document.createElement("<div style='display:block;position:fixed;left:0px;right:0px;top:0px;bottom:0px;z-index:100000;background:blue;'><button onclick='dragonClick()'>Close Popup</button><img src='assets/index/y.png' alt='very uwu'></div>");
+        dc = 1;
+    }else{
+        document.getElementById('deleteme').style.display = 'none';
+        dc = 0;
+    }
+}
