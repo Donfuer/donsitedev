@@ -10,7 +10,7 @@
     background:white;text-align:center;margin:auto;
 }
 .histcontent{
-    max-height:160px;border-radius:var(--rad);
+    position:relative;display:block;max-height:160px;border-radius:var(--rad);
 }
 /*
 .histcontent::before{
@@ -24,5 +24,43 @@
 */
 
 .histcontent p{
+    width:90%;/*position:relative;display:block;*/margin:auto;margin-top:1%;
+}
+/*
+.histcontent::before{
+    content:'';display:block;position:absolute;bottom:0px;left:0px;right:0px;
+    background:linear-gradient(transparent,#000000CC,black);
+}
+*/
+/*
+.histcontent{
+ position:relative;display:block; background:gray;width:25%;margin:auto;color:white;padding:10px;height:200px;
+}
+.histcontent p{
     width:90%;margin:auto;margin-top:1%;
 }
+*/
+.histcontent p::after{
+ content:'';display:block;background:linear-gradient(#00000000,var(--darkosc));backdrop-filter:blur(3px);
+ position:absolute;bottom:0px;left:0px;right:0px;height:60px;border-radius:0 0 var(--rad) var(--rad);
+}
+.histcontent::before,.histcontent::after{
+ bottom:20px;z-index:1;display:block;position:absolute;content:'';height:15px;width:20%;
+ background:white;
+}
+.histcontent::before{
+  left:30%;transform:skewY(10deg);border-radius:var(--rad) 0 0 var(--rad);border-right:1px solid white;
+}
+.histcontent::after{
+  right:30%;transform:skewY(-10deg);border-radius:0 var(--rad) var(--rad) 0;
+}
+.histcontent:hover::before,.histcontent:hover::after{
+  background:#CCCCCC;transform:translate(0px, 10px);border:0px;
+}
+.histcontent:hover p::after{
+    background:linear-gradient(var(--darktrans),var(--dark));
+}
+/*
+.histcontent p::before{
+  content:'';display:block;position:absolute;bottom:14px;width:15px;height:15px;z-index:2;left:48%;border-radius:30px;
+  background:white;*/
