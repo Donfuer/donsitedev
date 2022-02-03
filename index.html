@@ -28,6 +28,10 @@
     </div>
         <div class='headspac'></div>
     </header>
+    <div id='changelog' style='position:fixed;width:100%;height:100%;top:0px;left:0px;right:0px;bottom:0px;background:var(--darktrans);z-index:1000;'>
+        <iframe src='assets/changelog.html' title='Changelog' style='width:60%;height:60%;position:absolute;top:10%;bottom:10%;right:10%;left:10%;'></iframe>
+        <button onclick="document.getElementById('changelog').style.display='none'" style='display:absolute;bottom:0px;left:0px;right:0px;height:5%;'>Close Changelog</button>
+    </div>
     <div id="bgexp" style="opacity:1;"></div>
     <div id='mein' class='main'>
         <div class="col2grid">
@@ -47,14 +51,6 @@
             </div>
             <div class='med'>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/icVqvRXOhZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div onclick='dragonClick()'>
-                <img src="https://media.discordapp.net/attachments/832430314587947019/938099090804330577/fuzzy.gif" alt='CLICK HERE'>
-                <script>var dc=0;dragonClick=()=>{0==dc?(document.getElementById("html").style.display="block",dc=1):(document.getElementById("html").style.display="none",dc=0)};</script>
-            </div>
-            <div id='html' style="display:none;position:fixed;left:0px;right:0px;top:0px;bottom:0px;z-index:100000;">
-                <button onclick='dragonClick()' style='display:absolute;top:0px;'>Close Popup</button>
-                <img style='width:100%;height:100%;' src='assets/index/y.jpeg' style='width:100%' alt='very uwu'>
             </div>
             <div>
                 Image goes here
