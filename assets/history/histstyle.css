@@ -3,41 +3,26 @@
     column-gap:1%;
 }
 .divider{
-    background: white url(image.svg) no-repeat center center;
+    background:var(--darktrans) url(image.svg) no-repeat center center;
+    background-size:cover;
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     min-height:200px;
 }
 .divider p{
-    background:white;text-align:center;margin:auto;
+    background:var(--null);text-align:center;margin:auto;width:4rem;font-size:1rem;border-radius:var(--rad)
 }
 .histcontent{
-    position:relative;display:block;max-height:160px;border-radius:var(--rad);
+    position:relative;display:block;height:150px;border-radius:var(--rad);overflow:hidden;
 }
 .histcontent p{
-    width:90%;/*position:relative;display:block;*/margin:auto;margin-top:1%;
+    width:95%;margin:auto;margin-top:1%;
 }
-
-/*
-.histcontent p::after{
-  content:'';display:block;background:linear-gradient(#00000000,var(--darkosc));
-  position:absolute;bottom:0px;left:0px;right:0px;top:0px;border-radius:0 0 var(--rad) var(--rad);
- }
-.histcontent::before,.histcontent::after{
-  bottom:20px;z-index:1;display:block;position:absolute;content:'';height:25px;width:20px;
-  background:white;
- }
-.histcontent::before{
-   left:40%;transform:skewX(50deg);
- }
-.histcontent::after{
-   right:40%;transform:skewX(-50deg);
- }
-.histcontent:hover::before,.histcontent:hover::after{
-   background:#CCCCCC;transform:translate(0px, 10px);border:0px;
- }
-.histcontent:hover p::after{
-     background:linear-gradient(#00000000,var(--dark));
- }
- */
+.histcontent img{
+  display:block;width:90%;margin:auto;margin-top:20px;
+}
+.histcontent i{
+  display:block;text-align:center;
+}
  #expandedView{
    z-index:4;display:none;position:fixed;left:1%;right:1%;height:auto;
    background:var(--darkosc);padding:10px;
@@ -45,6 +30,7 @@
  .nope{
    display:none;
  }
+ /*
  .not{
    display:block;position:absolute;left:0px;right:0px;bottom:0px;top:0px;border-radius:0 0 var(--rad) var(--rad);
    background:linear-gradient(transparent,transparent,transparent,var(--darkosc));
@@ -63,3 +49,15 @@
  .not:hover::before,.not:hover::after{
    background:var(--darktrans)
  }
+ */
+.not{
+  display:block;position:absolute;left:0px;right:0px;bottom:0px;top:0px;border-radius:0 0 var(--rad) var(--rad);
+  background:linear-gradient(transparent,transparent,transparent,var(--darkosc));
+}
+.not::after{
+  content:'';display:block;position:absolute;left:10%;right:10%;bottom:10%;height:10px;
+  background:var(--null);border-radius:var(--rad);transition-duration:0.1s;
+}
+.not:hover::after{
+  background:white;
+}

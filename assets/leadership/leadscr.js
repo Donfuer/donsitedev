@@ -68,6 +68,12 @@ function show(input) {
         blurb.innerHTML = Eccentri.blurb;
         isroot.href = Eccentri.namemc;
     }
+    else if (input == "inoculant"){
+        name.innerHTML = inoculant.name;
+        ign.innerHTML = inoculant.nick;
+        blurb.innerHTML = inoculant.blurb;
+        isroot.href = inoculant.namemc;
+    }
     else{
         name.innerHTML = "Error occurred.";
         ign.innerHTML = "invalid input!";
@@ -135,7 +141,7 @@ const ichnemonidae = {
 const AgentoftheCCP = {
     name: "AgentoftheCCP",
     nick:"Bonk",
-    blurb:"UNSET",
+    blurb:"AgentoftheCCP first found out about Donfuer in early 2020 because of the Donfuer 18 grief. He was very impressed by the builds in the grief video, and so he decided that he would jump on any chance he got to join Donfuer. It was in 2020 that he joined anarchy, and it wasn't until late 2021 that he spotted a message in a 9b9t discord advertising Donfuer. Agent joined the 9b9t branch, built at the 9b branch's base, and eventually worked his way up to being a branch leader.",
     namemc:"https://mine.ly/AgentoftheCCP.1"
 }
 const Eccentri = {

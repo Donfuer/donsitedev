@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donfuer | Gallery</title>
+    <title>$$$$Gallery$$$$</title>
     <link rel="stylesheet" href="assets/styl.css">
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <style>
-        #sequence{
-            grid-row:2 / 2;
-            grid-column:1 / span 2;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/gallery/galstyl.css">
 </head>
 <body>
     <header>
@@ -33,25 +28,58 @@
         </div>
         <div class='headspac'></div>
     </header>
+
+    <div id="bg"></div>
+    
     <div class='main'>
         <div class='col2grid'>
-            <div class='rawbg'>
-                Image 1
+            <div class='single'>
+                <img src="assets/placeholder.png">
             </div>
-            <div class='rawbg'>
-                Image 2
+            <div class='single'>
+                <img src="assets/placeholder.png">
             </div>
-            <div class='rawbg' id='sequence'>
-                ImageSequence
+            <div id='sequence'>
+                <button onclick='img(0)' id="b0"></button>
+                <button onclick="img(1)" id="b1"></button>
             </div>
-            <div class='rawbg'>
-                Image 3
+            <div class='single'>
+                <img src="assets/placeholder.png">
             </div>
-            <div class='rawbg'>
-                Image 4
+            <div class='single'>
+                <img src="assets/placeholder.png">
             </div>
         </div>
     </div>
+<script>/*
+    const b0 = document.getElementById("b0")
+    const b1 = document.getElementById("b1");
+    //onmouseover="show(0)" onmouseout="hide(0)"
+    show=(sel)=>{
+        document.getElementById("b"+sel).style.display = "block";
+    }
+    hide=(sel)=>{
+        if (sel == 0){
+            var x = setTimeout(()=>{b0.style.display = 'none'})
+    }*/
+    const max = 20;
+    const seq = document.getElementById('sequence');
+    var num = 0;
+    img=(e)=>{
+        if (e == 0){
+            num--;
+            if (num < 0){
+                num = max;
+            }
+        }else if (e == 1){
+            num++;
+            if (num > max){
+                num = 0;
+            }
+        }
+        seq.style.backgroundImage = "url(assets/gallery/"+num+".webp)";
+    }
+</script>
 <script src='assets/scr.js'></script>
 </body>
 </html>
