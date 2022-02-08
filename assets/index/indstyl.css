@@ -23,3 +23,6 @@ body{
 #mein{
     transition-duration:0.3s;
 }
+img{
+    width:100%;
+}

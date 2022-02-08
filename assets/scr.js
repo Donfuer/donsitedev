@@ -1,4 +1,5 @@
 //site by volker1
+/*
 const nav = document.getElementById('nav');
 const butt = document.getElementById('borg');
 const breakPointVal = ['4px','21%','36%']; // add #borg breakpoint values from stylesheet
@@ -25,4 +26,4 @@ navtoggle = () => {
         ntg = 0;
     }
 
-}
+}*/

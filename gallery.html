@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <input type='checkbox' id='navshow'>
         <nav class='rawbg' id='nav'>
             <a href='index.html'>Home</a>
             <a href='apply.html'>Apply</a>
@@ -18,12 +19,12 @@
             <a href='history.html'>History</a>
             <a href='leadership.html'>Leadership</a>
             <div id="navsep"></div>
+            <a href="events.html">Get Involved</a>
             <a href='https://discord.gg/nzPCyRs'>Join Discord</a>
             <a href='https://www.youtube.com/c/DonFuer'>Official Youtube</a>
             <a href='https://2b2t.miraheze.org/wiki/DonFuer'>2b2t Wiki</a>
         </nav>
         <div class='header rawbg'>
-            <div id='borg' onclick="navtoggle()"></div>
             Gallery
         </div>
         <div class='headspac'></div>
@@ -34,35 +35,25 @@
     <div class='main'>
         <div class='col2grid'>
             <div class='single'>
-                <img src="assets/placeholder.png">
+                <img src="assets/gallery/a2.webp">
             </div>
             <div class='single'>
-                <img src="assets/placeholder.png">
+                <img src="assets/gallery/b2.webp">
             </div>
             <div id='sequence'>
                 <button onclick='img(0)' id="b0"></button>
                 <button onclick="img(1)" id="b1"></button>
             </div>
             <div class='single'>
-                <img src="assets/placeholder.png">
+                <img src="assets/gallery/b1.webp">
             </div>
             <div class='single'>
-                <img src="assets/placeholder.png">
+                <img src="assets/gallery/a1.webp">
             </div>
         </div>
     </div>
-<script>/*
-    const b0 = document.getElementById("b0")
-    const b1 = document.getElementById("b1");
-    //onmouseover="show(0)" onmouseout="hide(0)"
-    show=(sel)=>{
-        document.getElementById("b"+sel).style.display = "block";
-    }
-    hide=(sel)=>{
-        if (sel == 0){
-            var x = setTimeout(()=>{b0.style.display = 'none'})
-    }*/
-    const max = 20;
+<script>
+    const max = 16;
     const seq = document.getElementById('sequence');
     var num = 0;
     img=(e)=>{
