@@ -55,7 +55,7 @@ nav a::before,nav a::after{
 }
 .col2grid{
     width:100%;box-sizing:border-box;padding:3%;
-    display:grid;grid-gap:4%;grid-template-columns:48% 48%;
+    display:grid;grid-gap:2%;grid-template-columns:48% 48%;margin-bottom:100px;
 }
 .col3grid{
     width:100%;box-sizing:border-box;padding:3%;
@@ -164,4 +164,7 @@ nav a::before,nav a::after{
     opacity:0.5;
     background: conic-gradient(white 0deg, red 5deg, red 85deg,white 90deg,black 95deg,black 175deg,white 180deg,red 185deg, red 265deg,white 270deg,black 275deg,black 355deg,white 360deg) no-repeat;
     background-size:cover;
+}
+#sneak{
+    height:50px;width:100%;
 }

@@ -35,40 +35,61 @@
     <div class='main'>
         <div class='col2grid'>
             <div class='single'>
-                <img src="assets/gallery/a2.webp">
+                <img src="assets/gallery/other/a2.webp">
             </div>
             <div class='single'>
-                <img src="assets/gallery/b2.webp">
+                <img src="assets/gallery/other/b2.webp">
             </div>
-            <div id='sequence'>
-                <button onclick='img(0)' id="b0"></button>
-                <button onclick="img(1)" id="b1"></button>
-            </div>
-            <div class='single'>
-                <img src="assets/gallery/b1.webp">
+            <div class="seq" id='sequence'>
+                <button onclick='img(0)' class="b0" id="b0"></button>
+                <button onclick="img(1)" class="b1" id="b1"></button>
             </div>
             <div class='single'>
-                <img src="assets/gallery/a1.webp">
+                <img src="assets/gallery/other/b1.webp">
             </div>
+            <div class='single'>
+                <img src="assets/gallery/other/a1.webp">
+            </div>
+            <div class="seq" id='sequencea'>
+                <button onclick='img(2)' class="b0" id="b2"></button>
+                <button onclick="img(3)" class="b1" id="b3"></button>
+            </div>
+            <div id="sneak"></div>
         </div>
     </div>
 <script>
-    const max = 16;
+    const max = 8;
+    const max1 = 8;
     const seq = document.getElementById('sequence');
+    const seq1 = document.getElementById('sequencea');
     var num = 0;
+    var num1 = 0;
     img=(e)=>{
         if (e == 0){
             num--;
             if (num < 0){
                 num = max;
             }
+            seq.style.backgroundImage = "url(assets/gallery/window/"+num+".webp)";
         }else if (e == 1){
             num++;
             if (num > max){
                 num = 0;
             }
+            seq.style.backgroundImage = "url(assets/gallery/window/"+num+".webp)";
+        }else if (e == 2){
+            num1--;
+            if (num1 < 0){
+                num1 = max1;
+            }
+            seq1.style.backgroundImage = "url(assets/gallery/window1/"+num1+".webp)";
+        }else if (e == 3){
+            num1++;
+            if (num1 > max1){
+                num1 = 0;
+            }
+            seq1.style.backgroundImage = "url(assets/gallery/window1/"+num1+".webp)";
         }
-        seq.style.backgroundImage = "url(assets/gallery/"+num+".webp)";
     }
 </script>
 <script src='assets/scr.js'></script>
