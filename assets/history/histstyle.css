@@ -1,62 +1,26 @@
-.divider{
-    background:var(--darktrans) url(image.svg) no-repeat center center;
-    background-size:cover;
-    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-    min-height:200px;
+img{
+  border-radius:var(--rad);width:100%;
 }
-.divider p{
-    background:var(--null);text-align:center;margin:auto;width:4rem;font-size:1rem;border-radius:var(--rad)
+.panel{
+  background:var(--darkosc);color:white;
+  padding-bottom:4rem;
+}
+.panel h2{
+  font-size:2rem;text-align:center;padding-top:1.5rem;
+}
+.panel p{
+  line-height:2rem;font-size:1.2rem;
+}
+.ign{
+  font-size:1.1em;
+}
+.base{
+  background:var(--darktrans);border-radius:var(--rad);
+  padding:5px;padding-top:3px;
 }
 .histcontent{
-    position:relative;display:block;height:150px;border-radius:var(--rad);overflow:hidden;
+  display:flex;flex-flow:column nowrap;justify-content:space-between;
 }
-.histcontent p{
-    width:95%;margin:auto;margin-top:1%;
-}
-.histcontent img{
-  display:block;width:90%;margin:auto;margin-top:20px;
-}
-.histcontent i{
-  display:block;text-align:center;
-}
- #expandedView{
-   z-index:4;display:none;position:fixed;left:1%;right:1%;height:auto;
-   background:var(--darkosc);padding:10px;
- }
- .nope{
-   display:none;
- }
- /*
- .not{
-   display:block;position:absolute;left:0px;right:0px;bottom:0px;top:0px;border-radius:0 0 var(--rad) var(--rad);
-   background:linear-gradient(transparent,transparent,transparent,var(--darkosc));
- }
- .not::before,.not::after{
-   content:'';display:block;position:absolute;height:1em;width:15%;
-   top:80%;
-   background:var(--null);
- }
- .not::before{
-   left:20%;transform:skewY(30deg);
- }
- .not::after{
-   right:20%;transform:skewY(-30deg);
- }
- .not:hover::before,.not:hover::after{
-   background:var(--darktrans)
- }
- */
-.not{
-  display:block;position:absolute;left:0px;right:0px;bottom:0px;top:0px;border-radius:0 0 var(--rad) var(--rad);
-  background:linear-gradient(transparent,transparent,transparent,var(--darkosc));
-}
-.not::after{
-  content:'';display:block;position:absolute;left:10%;right:10%;bottom:10%;height:10px;
-  background:var(--null);border-radius:var(--rad);transition-duration:0.1s;
-}
-.not:hover::after{
-  background:white;
-}
-.nope:hover{
-  height:300px;
+i{
+  font-size:1.1rem;text-align:center;margin-top:10px;
 }

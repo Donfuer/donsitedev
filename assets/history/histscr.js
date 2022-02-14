@@ -1,3 +1,7 @@
+
+
+
+/*
 function isOverflown(element) {
     return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
   }
@@ -22,14 +26,4 @@ checkSize();
 for(var i = 0; i < els.length; i++) {
     el = els[i];
     el.id = ("els" + i);
-    //var dc = "docClick("+i+")";
-    //el.onClick = function(){exp.innerHTML=el.innerHTML;exp.style="display:block;"};
-}
-/*
-docClick = (a) => {
-    var b = document.getElementById("els"+a);
-    if (b.className = styleNew){
-        exp.innerHTML = b.innerHTML;
-        exp.style = "display:block";
-    }
 }*/
