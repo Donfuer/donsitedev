@@ -52,3 +52,7 @@
     right:3%;background:var(--null);transition-duration:0.1s;
 }
 .single,.single img{margin:auto;}
+.headspan{
+    max-width:600px;margin:auto;padding:10px;
+    text-align:center;margin-top:20px;border-radius:var(--radlg);
+}

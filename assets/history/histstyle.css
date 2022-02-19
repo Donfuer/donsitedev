@@ -18,9 +18,57 @@ img{
   background:var(--darktrans);border-radius:var(--rad);
   padding:5px;padding-top:3px;
 }
+/*
 .histcontent{
   display:flex;flex-flow:column nowrap;justify-content:space-between;
 }
 i{
   font-size:1.1rem;text-align:center;margin-top:10px;
+}
+*/
+.container{
+  display:flex;flex-flow:row nowrap;
+}
+.textContainer, .imgContainer{
+  width:48%;margin:1%;
+}
+.histcontent{
+  border-bottom:2px solid white;
+}
+i{
+  display:block;font-size:1.1rem;margin-top:10px;margin-bottom:15px;
+}
+#videos{
+  aspect-ratio:16/9;width:100%;height:auto;border-radius:var(--rad);
+}
+.bottomFlex{
+  margin-top:50px;
+  display:flex;flex-flow:row nowrap;justify-content:space-between;
+}
+.bf, .bf-2{
+  box-sizing:border-box;padding:20px;
+  border-radius:var(--rad);text-align:center;
+}
+.bf{
+  width:24%;
+}
+.bf-2{
+  width:49%;
+}
+@media only screen and (max-width:800px){
+  .container{
+    display:flex;flex-flow:column nowrap;
+  }
+  .textContainer, .imgContainer{
+    width:98%;margin:1%;
+  }
+  .bottomFlex{
+    flex-flow:column nowrap;
+  }
+  .bf, .bf-2{
+    width:100%;margin-bottom:10px;
+  }
+  #hittingrod{
+    width:40%;display:block;margin:auto;
+  }
 }
