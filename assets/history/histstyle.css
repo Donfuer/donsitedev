@@ -35,7 +35,7 @@ i{
 .histcontent{
   border-bottom:2px solid white;
 }
-i{
+.container i{
   display:block;font-size:1.1rem;margin-top:10px;margin-bottom:15px;
 }
 #videos{

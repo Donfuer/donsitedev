@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$$$$Gallery$$$$</title>
+    <title>Donfuer | Gallery</title>
     <link rel="stylesheet" href="assets/styl.css">
     <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/gallery/galstyl.css">
+    <script src="https://kit.fontawesome.com/e51708f7f4.js" crossorigin="anonymous"></script>
+    <style>
+        #bg{
+            background:url(assets/gallery/window/4.webp) no-repeat;
+            background-size:cover;
+        }
+    </style>
 </head>
 <body>
     <header>
         <input type='checkbox' id='navshow'>
         <nav class='rawbg' id='nav'>
-            <a href='index.html'>Home</a>
-            <a href='apply.html'>Apply</a>
-            <a href='gallery.html'>Gallery</a>
-            <a href='history.html'>History</a>
-            <a href='leadership.html'>Leadership</a>
+            <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
+            <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
+            <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
+            <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
+            <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
             <div id="navsep"></div>
-            <a href="events.html">Get Involved</a>
-            <a href='https://discord.gg/nzPCyRs'>Join Discord</a>
-            <a href='https://www.youtube.com/c/DonFuer'>Official Youtube</a>
-            <a href='https://2b2t.miraheze.org/wiki/DonFuer'>2b2t Wiki</a>
+            <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
+            <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
+            <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
+            <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
         </nav>
         <div class='header rawbg'>
             Gallery
@@ -60,41 +67,7 @@
             <div id="sneak"></div>
         </div>
     </div>
-<script>
-    const max = 8;
-    const max1 = 8;
-    const seq = document.getElementById('sequence');
-    const seq1 = document.getElementById('sequencea');
-    var num = 0;
-    var num1 = 0;
-    img=(e)=>{
-        if (e == 0){
-            num--;
-            if (num < 0){
-                num = max;
-            }
-            seq.style.backgroundImage = "url(assets/gallery/window/"+num+".webp)";
-        }else if (e == 1){
-            num++;
-            if (num > max){
-                num = 0;
-            }
-            seq.style.backgroundImage = "url(assets/gallery/window/"+num+".webp)";
-        }else if (e == 2){
-            num1--;
-            if (num1 < 0){
-                num1 = max1;
-            }
-            seq1.style.backgroundImage = "url(assets/gallery/window1/"+num1+".webp)";
-        }else if (e == 3){
-            num1++;
-            if (num1 > max1){
-                num1 = 0;
-            }
-            seq1.style.backgroundImage = "url(assets/gallery/window1/"+num1+".webp)";
-        }
-    }
-</script>
+<script src="assets/gallery/galscr.js"></script>
 <script src='assets/scr.js'></script>
 </body>
 </html>

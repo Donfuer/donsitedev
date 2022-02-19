@@ -3,21 +3,40 @@
 }
 .main p{
     width:90%;margin:auto;text-align:center;height:10rem;margin-bottom:50px;
-}.col2grid div::after{
-    content:'';width:100%;height:100px;display:block;position:relative;
 }
+/*.col2grid div::after{
+    content:'';width:100%;height:100px;display:block;position:relative;
+}*/
 .rawbg,.col2grid div{
     background:var(--darkosc);backdrop-filter:blur(5px);color:white;
+    overflow:hidden;
 }
 .appbtn{
     display:block;position:absolute;bottom:20px;left:20px;right:20px;height:60px;z-index:1;
     font-size:1.2em;font-family:var(--fontfam);
 }
+#appwin{
+    z-index:3;position:fixed;top:0px;left:0px;right:0px;bottom:0px;
+    background:var(--darktrans);backdrop-filter:blur(3px);
+    display:none;overflow:auto;
+}
 #appframe{
-    width:100%;height:100%;
+    z-index:4;position:absolute;top:80px;left:0px;right:0px;height:2500px;
+    display:none;
 }
 #app{
+    z-index:5;width:100%;height:100%;
     display:none;
-    position:fixed;top:0px;bottom:0px;left:0px;right:0px;
-    background:var(--darktrans);backdrop-filter:blur(6px);
+}
+
+#bRow{
+    display:flex;flex-flow:row nowrap;position:fixed;bottom:15px;right:5px;
+    width:160px;height:40px;justify-content:space-around;z-index:7;
+}
+#bRow button{
+    width:40px;height:40px;font-size:20px;position:relative;z-index:8;
+    border:none;outline:none;border-radius:50%;background:var(--darkobs);color:white;
+}
+#bRow button:hover{
+    background:var(--darkosc);
 }
