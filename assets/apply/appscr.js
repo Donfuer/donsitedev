@@ -6,7 +6,7 @@ const url9B = "https://docs.google.com/forms/d/e/1FAIpQLSfj0F5rn6dvrEVnnZOP5qW89
 
 const appFrame = document.getElementById('appframe')
 const app = document.getElementById('app')
-const scrBut = document.getElementById("myBtn")
+const bRow = document.getElementById("bRow")
 apply = (branch) => {
   //something here about setting height to be something
   if (branch == "2B"){
@@ -26,7 +26,7 @@ apply = (branch) => {
   document.getElementById("appwin").style.display = "block"
   appFrame.style.display = "block"
   app.style.display = "block"
-  scrBut.style.display = "block"
+  bRow.style.display = "flex"
 }
 
 function topApp(){
@@ -48,5 +48,5 @@ function closeApp(){
   document.getElementById("appwin").style.display = "none"
   appFrame.style.display = "none"
   app.style.display = "none"
-  scrBut.style.display = "none"
+  bRow.style.display = "none"
 }

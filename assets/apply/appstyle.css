@@ -30,7 +30,7 @@
 }
 
 #bRow{
-    display:flex;flex-flow:row nowrap;position:fixed;bottom:15px;right:5px;
+    display:none;flex-flow:row nowrap;position:fixed;bottom:15px;right:5px;
     width:160px;height:40px;justify-content:space-around;z-index:7;
 }
 #bRow button{
