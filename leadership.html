@@ -1,156 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donfuer | Leadership</title>
-    <link rel="stylesheet" href="assets/styl.css">
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/leadership/leadstyle.css">
-    <script src="https://kit.fontawesome.com/e51708f7f4.js" crossorigin="anonymous"></script>
-    <style>
-        #bg{
-            background:url(assets/gallery/window1/6.webp) no-repeat;
-            background-size:cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donfuer | Leadership</title>
+  <link rel="stylesheet" href="assets/styl.css">
+  <link rel="icon" href="assets/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/leadership/leadstyle.css">
+  <script src="https://kit.fontawesome.com/e51708f7f4.js" crossorigin="anonymous"></script>
+  <style>
+    #bg {
+      background: url(assets/gallery/window1/6.webp) no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <input type='checkbox' id='navshow'>
-        <nav class='rawbg' id='nav'>
-            <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
-            <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
-            <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
-            <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
-            <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
-            <div id="navsep"></div>
-            <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
-            <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
-            <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
-            <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
-        </nav>
-        <div class='header rawbg'>
-            Leadership
-        </div>
-        <div class='headspac'></div>
-    </header>
-
-    <div id="bg"></div>
-
-    <div class="main">
-        <div class='expltxt rawbg'>
-            <h1>Elders</h1>
-            <p>
-                Our elders are the top leaders of the group. They lead every branch alongside appointed branch leaders.
-            </p>
-        </div>
-        <div class="elders rawbg">      <!--Thanks to Craftar for the amazing auto-updating avatars!-->
-            <div>
-                <img src="assets/leadership/skins/0.png" alt="D_loaded's Skin">
-                <h3>D_loaded</h3>
-                <button class='rawbutton' onclick="show('0')">Show Information</button>
-            </div>
-            <div>
-                <img src="assets/leadership/skins/1.png" alt="DirectorJohnson's Skin">
-                <h3>DirectorJohnson</h3>
-                <button class='rawbutton' onclick="show('1')">Show Information</button>
-            </div>
-            <div>
-                <img src="assets/leadership/skins/2.png" alt="Dragonworm's Skin">
-                <h3>Dragonworm</h3>
-                <button class='rawbutton' onclick="show('2')">Show Information</button>
-            </div>
-            <div>
-                <img src="assets/leadership/skins/3.png" alt="iAmZeiss's Skin">
-                <h3>Zeiss</h3>
-                <button class='rawbutton' onclick="show('3')">Show Information</button>
-            </div>
-            <div>
-                <img src="assets/leadership/skins/5.png" alt="TimeOfWheel's Skin">
-                <h3>TimeOfWheel</h3>
-                <button class="rawbutton" onclick="show('5')">Show Information</button>
-            </div>
-        </div>
-        <div class="expltxt rawbg">
-            <h1>Nobles</h1>
-            <p>
-                Our nobles are second only to the elders. They lead their own respective branches alongside the elders.
-            </p>
-        </div>
-        <div class="col2grid">
-            <div class='rawbg'>
-                <h2>2b2t Rangers</h2>
-                <div class="leadFlex">
-                    <div>
-                        <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
-                        <p>volker1</p>
-                        <button class='rawbutton' onclick="show('4')">Show Information</button>
-                    </div>
-                </div>
-            </div>
-            <div class='rawbg'>
-                <h2>PhoenixAnarchy</h2>
-                <div class="leadFlex">
-                    <div>
-                        <img src="assets/leadership/skins/9.png" alt="Eccentri's Skin">
-                        <p>Eccentri</p>
-                        <button class='rawbutton' onclick="show('9')">Show Information</button>
-                    </div>
-                    <div>
-                        <img src="assets/leadership/skins/6.png" alt="Whygoodboyg's Skin">
-                        <p>Whygoodboyg</p>
-                        <button class='rawbutton' onclick="show('6')">Show Information</button>
-                    </div>
-                    <div>
-                        <img src="assets/leadership/skins/10.png" alt="fzed's Skin">
-                        <p>Fzed</p>
-                        <button class='rawbutton' onclick="show('10')">Show Information</button>
-                    </div>
-                </div>
-            </div>
-            <div class='rawbg'>
-                <h2>Stoneworks</h2>
-                <div class="leadFlex">
-                    <div>
-                        <img src="assets/leadership/skins/7.png" alt="ichnemonidae's Skin">
-                        <p>Ichne</p>
-                        <button class='rawbutton' onclick="show('7')">Show Information</button>
-                    </div>
-                    <div>
-                        <img src="assets/leadership/skins/11.png" alt="Inoculant's Skin">
-                        <p>Mystxc</p>
-                        <button class='rawbutton' onclick="show('11')">Show Information</button>
-                    </div>
-                </div>
-            </div>
-            <div class='rawbg'>
-                <h2>9b9t</h2>
-                <div class="leadFlex">
-                    <div>
-                        <img src="assets/leadership/skins/8.png" alt="AgentoftheCCP's Skin">
-                        <p>Bonk</p>
-                        <button class='rawbutton' onclick="show('8')">Show Information</button>
-                    </div>
-                    <div>
-                        <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
-                        <p>volker1</p>
-                        <button class='rawbutton' onclick="show('4')">Show Information</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header>
+    <input type="checkbox" id="nb">
+    <label for="nb" id="nbl"></label>
+    <nav class='rawbg' id='nav'>
+      <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
+      <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
+      <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
+      <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
+      <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
+      <div id="navsep"></div>
+      <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
+      <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
+      <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
+      <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
+    </nav>
+    <div class='header rawbg'>
+      Leadership
     </div>
-    <div id='iw' onclick='hide()'></div>
-    <div id='infoWindow'>
-        <h1 id='infoName'>Please select someone to get started!</h1>
-        <h2 id='IGN'>Their IGN will show here!</h2>
-        <p id='infoBlurb'></p>
-        <a id='infoSoc' target="_blank" class='rawbutton' href='#'>NameMC Page</a>
-        <button class='rawbutton' onclick='hide()'>Back</button>
+    <div class='headspac'></div>
+  </header>
+  <div id="bg"></div>
+  <div class="main">
+    <div class='expltxt rawbg'>
+      <h1>Elders</h1>
+      <p>
+        Our elders are the top leaders of the group. They lead every branch alongside appointed branch leaders.
+      </p>
     </div>
-<script src='assets/leadership/leadscr.js'></script>
-<script src='assets/scr.js'></script>
+    <div class="elders rawbg">
+      <!--Thanks to Craftar for the amazing auto-updating avatars!-->
+      <div>
+        <img src="assets/leadership/skins/0.png" alt="D_loaded's Skin">
+        <h3>D_loaded</h3>
+        <button class='rawbutton' onclick="show('0')">Show Information</button>
+      </div>
+      <div>
+        <img src="assets/leadership/skins/1.png" alt="DirectorJohnson's Skin">
+        <h3>DirectorJohnson</h3>
+        <button class='rawbutton' onclick="show('1')">Show Information</button>
+      </div>
+      <div>
+        <img src="assets/leadership/skins/2.png" alt="Dragonworm's Skin">
+        <h3>Dragonworm</h3>
+        <button class='rawbutton' onclick="show('2')">Show Information</button>
+      </div>
+      <div>
+        <img src="assets/leadership/skins/3.png" alt="iAmZeiss's Skin">
+        <h3>Zeiss</h3>
+        <button class='rawbutton' onclick="show('3')">Show Information</button>
+      </div>
+      <div>
+        <img src="assets/leadership/skins/5.png" alt="TimeOfWheel's Skin">
+        <h3>TimeOfWheel</h3>
+        <button class="rawbutton" onclick="show('5')">Show Information</button>
+      </div>
+    </div>
+    <div class="expltxt rawbg">
+      <h1>Nobles</h1>
+      <p>
+        Our nobles are second only to the elders. They lead their own respective branches alongside the elders.
+      </p>
+    </div>
+    <div class="col2grid">
+      <div class='rawbg'>
+        <h2>2b2t Rangers</h2>
+        <div class="leadFlex">
+          <div>
+            <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
+            <p>volker1</p>
+            <button class='rawbutton' onclick="show('4')">Show Information</button>
+          </div>
+        </div>
+      </div>
+      <div class='rawbg'>
+        <h2>PhoenixAnarchy</h2>
+        <div class="leadFlex">
+          <div>
+            <img src="assets/leadership/skins/9.png" alt="Eccentri's Skin">
+            <p>Eccentri</p>
+            <button class='rawbutton' onclick="show('9')">Show Information</button>
+          </div>
+          <div>
+            <img src="assets/leadership/skins/6.png" alt="Whygoodboyg's Skin">
+            <p>Whygoodboyg</p>
+            <button class='rawbutton' onclick="show('6')">Show Information</button>
+          </div>
+          <div>
+            <img src="assets/leadership/skins/10.png" alt="fzed's Skin">
+            <p>Fzed</p>
+            <button class='rawbutton' onclick="show('10')">Show Information</button>
+          </div>
+        </div>
+      </div>
+      <div class='rawbg'>
+        <h2>Stoneworks</h2>
+        <div class="leadFlex">
+          <div>
+            <img src="assets/leadership/skins/7.png" alt="ichnemonidae's Skin">
+            <p>Ichne</p>
+            <button class='rawbutton' onclick="show('7')">Show Information</button>
+          </div>
+          <div>
+            <img src="assets/leadership/skins/11.png" alt="Inoculant's Skin">
+            <p>Mystxc</p>
+            <button class='rawbutton' onclick="show('11')">Show Information</button>
+          </div>
+        </div>
+      </div>
+      <div class='rawbg'>
+        <h2>9b9t</h2>
+        <div class="leadFlex">
+          <div>
+            <img src="assets/leadership/skins/8.png" alt="AgentoftheCCP's Skin">
+            <p>Bonk</p>
+            <button class='rawbutton' onclick="show('8')">Show Information</button>
+          </div>
+          <div>
+            <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
+            <p>volker1</p>
+            <button class='rawbutton' onclick="show('4')">Show Information</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='iw' onclick='hide()'></div>
+  <div id='infoWindow'>
+    <h1 id='infoName'>Please select someone to get started!</h1>
+    <h2 id='IGN'>Their IGN will show here!</h2>
+    <p id='infoBlurb'></p>
+    <a id='infoSoc' target="_blank" class='rawbutton' href='#'>NameMC Page</a>
+    <button id="icn" onclick="hide()"><i class="fa-solid fa-arrow-left"></i></button>
+  </div>
+  <script src='assets/leadership/leadscr.js'></script>
+  <script src='assets/scr.js'></script>
 </body>
 </html>

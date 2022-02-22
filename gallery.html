@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donfuer | Gallery</title>
-    <link rel="stylesheet" href="assets/styl.css">
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="assets/gallery/galstyl.css">
-    <script src="https://kit.fontawesome.com/e51708f7f4.js" crossorigin="anonymous"></script>
-    <style>
-        #bg{
-            background:url(assets/gallery/window/4.webp) no-repeat;
-            background-size:cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donfuer | Gallery</title>
+  <link rel="stylesheet" href="assets/styl.css">
+  <link rel="icon" href="assets/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/gallery/galstyl.css">
+  <script src="https://kit.fontawesome.com/e51708f7f4.js" crossorigin="anonymous"></script>
+  <style>
+    #bg {
+      background: url(assets/gallery/window/4.webp) no-repeat;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <input type='checkbox' id='navshow'>
-        <nav class='rawbg' id='nav'>
-            <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
-            <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
-            <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
-            <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
-            <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
-            <div id="navsep"></div>
-            <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
-            <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
-            <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
-            <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
-        </nav>
-        <div class='header rawbg'>
-            Gallery
-        </div>
-        <div class='headspac'></div>
-    </header>
-
-    <div id="bg"></div>
-    
-    <div class='main'>
-        <div class="rawbg headspan">
-            <p>This page is a showcase of some of our works across multiple servers.</p>
-        </div>
-        <div class='col2grid'>
-            <div class='single'>
-                <img src="assets/gallery/other/b2.webp">
-            </div>
-            <div class='single'>
-                <img src="assets/gallery/other/a2.webp">
-            </div>
-            <div class="seq" id='sequence'>
-                <button onclick='img(0)' class="b0" id="b0"></button>
-                <button onclick="img(1)" class="b1" id="b1"></button>
-            </div>
-            <div class='single'>
-                <img src="assets/gallery/other/b1.webp">
-            </div>
-            <div class='single'>
-                <img src="assets/gallery/other/a1.webp">
-            </div>
-            <div class="seq" id='sequencea'>
-                <button onclick='img(2)' class="b0" id="b2"></button>
-                <button onclick="img(3)" class="b1" id="b3"></button>
-            </div>
-            <div id="sneak"></div>
-        </div>
+  <header>
+    <input type="checkbox" id="nb">
+    <label for="nb" id="nbl"></label>
+    <nav class='rawbg' id='nav'>
+      <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
+      <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
+      <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
+      <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
+      <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
+      <div id="navsep"></div>
+      <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
+      <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
+      <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
+      <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
+    </nav>
+    <div class='header rawbg'>
+      Gallery
     </div>
-<script src="assets/gallery/galscr.js"></script>
-<script src='assets/scr.js'></script>
+    <div class='headspac'></div>
+  </header>
+  <div id="bg"></div>
+
+  <div class='main'>
+    <div class="rawbg headspan">
+      <p>This page is a showcase of some of our works across multiple servers.</p>
+    </div>
+    <div class='container'>
+      <div class='single a nosel'>
+        <img src="assets/gallery/other/b2.webp">
+      </div>
+      <div class='single b nosel' id="tricky_bastard">
+        <img src="assets/gallery/other/a2.webp">
+      </div>
+      <div class="seq ab" id='sequence' style="background-image:url(assets/gallery/window/0.webp)">
+        <button onclick='img(0)' class="b0" id="b0"></button>
+        <button onclick="img(1)" class="b1" id="b1"></button>
+        <i class="icn fa-solid fa-images"></i>
+      </div>
+      <div class='single c nosel'>
+        <img src="assets/gallery/other/b1.webp">
+      </div>
+      <div class='single d nosel'>
+        <img src="assets/gallery/other/a1.webp">
+      </div>
+      <div class="seq cd" id='sequencea' style="background-image:url(assets/gallery/window1/0.webp)">
+        <button onclick='img(2)' class="b0" id="b2"></button>
+        <button onclick="img(3)" class="b1" id="b3"></button>
+        <i class="icn fa-solid fa-images"></i>
+      </div>
+      <div id="sneak"></div>
+    </div>
+  </div>
+  <script src="assets/gallery/galscr.js"></script>
+  <script src='assets/scr.js'></script>
 </body>
 </html>

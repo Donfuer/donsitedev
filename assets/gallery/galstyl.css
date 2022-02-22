@@ -1,58 +1,93 @@
 .seq{
-    background-color:var(--darktrans); background-repeat:no-repeat; background-size:cover;aspect-ratio:16/9;
-    display:flex;flex-flow:row nowrap;justify-content: space-between;
-    padding:0px !important;transition-duration:0.2s;
+  background-color:white;background-repeat:no-repeat;background-size:cover;aspect-ratio:16/9;
+  position:relative;border-radius:var(--rad);
+  display:block;padding:0px !important;transition-duration:0.2s;
 }
-#sequence{
-    background-image:url(window/0.webp);
-    grid-area: 2 / 1 / 2 / span 2;
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr; 
+  gap: 20px 20px; 
+  grid-template-areas: 
+    "a b"
+    "ab ab"
+    "c d"
+    "cd cd";
+    margin-top:40px;
 }
-#sequencea{
-    background-image:url(window1/0.webp);
-    grid-area: 4 / 1 / 4 / span 2;
+.a { grid-area: a; }
+.b { grid-area: b; }
+.ab { grid-area: ab; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.cd { grid-area: cd; }
+.icn{
+  position:absolute;top:10px;left:10px;color:var(--null);z-index:1;
 }
 .seq button{
-    display:block;width:30%;height:100%;
-    background:transparent;border:none;
+  display:block;width:30%;height:100%;z-index:2;
+  background:transparent;border:none;
 }
 .b0:hover{
-    background:linear-gradient(to right, var(--darkosc),transparent,transparent);
-    border-radius:var(--rad) 0 0 var(--rad);
+  background:linear-gradient(to right, var(--darkosc),transparent,transparent);
+  border-radius:var(--rad) 0 0 var(--rad);
 }
 .b1:hover{
-    background:linear-gradient(to left, var(--darkosc),transparent,transparent);
-    border-radius:0 var(--rad) var(--rad) 0;
+  background:linear-gradient(to left, var(--darkosc),transparent,transparent);
+  border-radius:0 var(--rad) var(--rad) 0;
+}
+.b0{
+  float:left;
+}
+.b1{
+  float:right;
 }
 .single img{
-    width:100%;border-radius:var(--rad);display:block;
-}
-.single{
-    padding:0px;
+  width:100%;border-radius:var(--rad);display:block;
 }
 @media only screen and (max-width:1300px){
-    #sequence{
-        grid-column:1 / span 1; /*idk how this works but it works ig lmao*/
+  .container {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px 0px;
+      grid-template-areas:
+        "a ."
+        "b ."
+        "ab ."
+        "c ."
+        "d ."
+        "cd .";
+      margin-top:40px;margin-bottom:40px;
     }
-    .single,.single img{margin:auto;}
+  .a { grid-area: a; }
+  .b { grid-area: b; }
+  .ab { grid-area: ab; }
+  .c { grid-area: c; }
+  .d { grid-area: d; }
+  .cd { grid-area: cd; }
+  #tricky_bastard{
+    display:block;width:100%;
+  }
 }
 .b0::before,.b1::before{
-    content:'';display:block;position:absolute;top:10%;bottom:10%;
-    background:transparent;width:1%;border-radius:69px;transition-duration:3s;
+  content:'';display:block;position:absolute;top:10%;bottom:10%;
+  background:transparent;width:1%;border-radius:69px;transition-duration:3s;
 }
 .b0::before{
     left:3%;
 }
 .b1::before{
-    right:3%;
+  right:3%;
 }
 .b0:hover::before{
-    left:3%;background:var(--null);transition-duration:0.1s;
+  left:3%;background:var(--null);transition-duration:0.1s;
 }
 .b1:hover::before{
-    right:3%;background:var(--null);transition-duration:0.1s;
+  right:3%;background:var(--null);transition-duration:0.1s;
 }
 .single,.single img{margin:auto;}
 .headspan{
-    max-width:600px;margin:auto;padding:10px;
-    text-align:center;margin-top:20px;border-radius:var(--radlg);
+  max-width:600px;margin:auto;padding:10px;
+  text-align:center;margin-top:20px;border-radius:var(--radlg);
 }
