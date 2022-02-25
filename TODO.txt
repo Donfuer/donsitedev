@@ -1,0 +1,14 @@
+3 different images for donfuer 10, not enough images of other bases on gallery
+more about donfuer pvp
+DONE - link to dlod ss for build comp page: https://cdn.discordapp.com/attachments/926136814383824947/940660353908490250/2022-01-29_17.54.18.png
+DONE - IMPORTANT: fix navshow for furryfox
+application buttons are askew on mobile
+nav - make it full screen for mobile
+- paneUI schema
+
+- before release
+test and debug folderized
+make tutorial
+go over license terms
+transfer domain
+build mapart on 2b2t

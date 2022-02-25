@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,10 +16,11 @@
     }
   </style>
 </head>
-<body>
+<body onload="cff('lead')">
   <header>
     <input type="checkbox" id="nb">
     <label for="nb" id="nbl"></label>
+    <button id="fireFoxFallBack" onclick="fireFoxNav()"><i class='fa-solid fa-bars'></i></button>
     <nav class='rawbg' id='nav'>
       <a href='index.html' class="bLink nvl"><i class="fa-solid fa-house-chimney"></i> Home</a>
       <a href='apply.html' class="bLink nvl"><i class="fa-solid fa-check"></i> Apply</a>
@@ -86,7 +86,7 @@
         <div class="leadFlex">
           <div>
             <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
-            <p>volker1</p>
+            <h3>volker1</h3>
             <button class='rawbutton' onclick="show('4')">Show Information</button>
           </div>
         </div>
@@ -96,17 +96,17 @@
         <div class="leadFlex">
           <div>
             <img src="assets/leadership/skins/9.png" alt="Eccentri's Skin">
-            <p>Eccentri</p>
+            <h3>Eccentri</h3>
             <button class='rawbutton' onclick="show('9')">Show Information</button>
           </div>
           <div>
             <img src="assets/leadership/skins/6.png" alt="Whygoodboyg's Skin">
-            <p>Whygoodboyg</p>
+            <h3>Whygoodboyg</h3>
             <button class='rawbutton' onclick="show('6')">Show Information</button>
           </div>
           <div>
             <img src="assets/leadership/skins/10.png" alt="fzed's Skin">
-            <p>Fzed</p>
+            <h3>Fzed</h3>
             <button class='rawbutton' onclick="show('10')">Show Information</button>
           </div>
         </div>
@@ -116,12 +116,12 @@
         <div class="leadFlex">
           <div>
             <img src="assets/leadership/skins/7.png" alt="ichnemonidae's Skin">
-            <p>Ichne</p>
+            <h3>Ichne</h3>
             <button class='rawbutton' onclick="show('7')">Show Information</button>
           </div>
           <div>
             <img src="assets/leadership/skins/11.png" alt="Inoculant's Skin">
-            <p>Mystxc</p>
+            <h3>Mystxc</h3>
             <button class='rawbutton' onclick="show('11')">Show Information</button>
           </div>
         </div>
@@ -131,12 +131,12 @@
         <div class="leadFlex">
           <div>
             <img src="assets/leadership/skins/8.png" alt="AgentoftheCCP's Skin">
-            <p>Bonk</p>
+            <h3>Bonk</h3>
             <button class='rawbutton' onclick="show('8')">Show Information</button>
           </div>
           <div>
             <img src="assets/leadership/skins/4.png" alt="volker1's Skin">
-            <p>volker1</p>
+            <h3>volker1</h3>
             <button class='rawbutton' onclick="show('4')">Show Information</button>
           </div>
         </div>
@@ -148,7 +148,7 @@
     <h1 id='infoName'>Please select someone to get started!</h1>
     <h2 id='IGN'>Their IGN will show here!</h2>
     <p id='infoBlurb'></p>
-    <a id='infoSoc' target="_blank" class='rawbutton' href='#'>NameMC Page</a>
+    <a id='infoSoc' target="_blank" class='bLink' href='#'>NameMC Page</a>
     <button id="icn" onclick="hide()"><i class="fa-solid fa-arrow-left"></i></button>
   </div>
   <script src='assets/leadership/leadscr.js'></script>

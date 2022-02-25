@@ -39,9 +39,12 @@ h2{
     width:160px;height:40px;justify-content:space-around;z-index:7;
 }
 #bRow button{
-    width:40px;height:40px;font-size:18px;position:relative;z-index:8;cursor:pointer;
-    border:none;outline:none;border-radius:50%;background:var(--darkobs);color:white;
+    width:40px;height:40px;font-size:18px;position:relative;z-index:8;cursor:pointer;display:grid;place-items:center;
+    border:none;outline:none;border-radius:50%;background:var(--darkobs);color:white;box-sizing:border-box;
 }
 #bRow button:hover{
-    background:var(--darkosc);color:dodgerblue;
+    background:var(--darkosc);
+}
+#bRow button:active{
+    border:1px solid white;
 }

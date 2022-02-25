@@ -14,7 +14,7 @@
     font-family:var(--fontfam);
 }
 *::selection{
-    background:var(--darktrans);color:var(--null);
+    background:var(--null);color:var(--dark);
 }
 ::-webkit-scrollbar{border-radius:var(--radsm);width:10px;}
 ::-webkit-scrollbar-track{background:#a1a1a1;}
@@ -39,10 +39,13 @@
 .bLink:hover,.rawbutton:hover{
     transform:translate(1px,2px);background:var(--darktrans);border-left:2px solid var(--darkobs);
 }
+.bLink:active,.rawbutton:active{
+    border:1px solid white;border-left:4px solid var(--null);
+}
 nav{
     border-radius:0 var(--rad) var(--rad) 0;
     position:fixed;top:5px;left:0px;bottom:5px;width:10%;z-index:12;
-    display:flex;flex-flow:column nowrap;/* */
+    display:flex;flex-flow:column nowrap;overflow:auto;
     user-select:none;-moz-user-select:none;-ms-user-select:none;
 }
 .nvl{
@@ -96,7 +99,6 @@ nav{
     nav{
         position:fixed;top:55px;bottom:5px;display:none;width:var(--navwidth);
     }
-      
     #nb,#nbl{
       width:0px;height:0px;transition-duration:0.2s;cursor:pointer;
     }
@@ -132,32 +134,28 @@ nav{
     #nb:checked~nav{
         display:flex;
     }
+    .firefixed{
+        display:block;position:fixed;top:5px;left:5px;z-index:14;width:40px;height:40px;
+        outline:0px;border:none;font-size:35px;color:white;background:none;cursor:pointer;
+    }
 }
 
-@media only screen and (max-width:800px){
-    :root{
-        --navwidth:35%;
-    }
+@media only screen and (max-width:500px){
     .main{
         width:100%;
     }
     nav{
-        width:var(--navwidth);
+        width:100%;
+        background:var(--null);
+    }
+    .nvl{
+        width:100%;font-size:1rem;background:none;border:none;margin-bottom:3px;margin-top:3px;
+        text-align:center;
+    }
+    #navsep{
+        display:none;
     }
 }
-@media only screen and (max-height:540px){
-    nav a::before,nav a::after{
-        height:2px;
-    }
-    nav a{
-        margin-top:5px;margin-bottom:5px;
-        font-size:0.8rem;
-    }
-}
-.cntrtxt{
-    text-align:center;
-}
-
 #bg{
     display:block;position:fixed;top:0px;left:0px;right:0px;bottom:0px;z-index:-1;
     opacity:0.5;
@@ -166,4 +164,10 @@ nav{
 }
 #sneak{
     height:50px;width:100%;
+}
+.firefixed:active{
+    color:var(--null);
+}
+.nofirefox{
+    display:none;
 }
