@@ -18,14 +18,6 @@ img{
   background:var(--darktrans);border-radius:var(--rad);
   padding:5px;padding-top:3px;
 }
-/*
-.histcontent{
-  display:flex;flex-flow:column nowrap;justify-content:space-between;
-}
-i{
-  font-size:1.1rem;text-align:center;margin-top:10px;
-}
-*/
 .container{
   display:flex;flex-flow:row nowrap;
 }

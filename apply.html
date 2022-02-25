@@ -21,43 +21,47 @@
     <input type="checkbox" id="nb">
     <label for="nb" id="nbl"></label>
     <nav class='rawbg' id='nav'>
-      <a href='index.html'><i class="fa-solid fa-house-chimney"></i> Home</a>
-      <a href='apply.html'><i class="fa-solid fa-check"></i> Apply</a>
-      <a href='gallery.html'><i class="fa-solid fa-images"></i> Gallery</a>
-      <a href='history.html'><i class="fa-solid fa-book"></i> History</a>
-      <a href='leadership.html'><i class="fa-solid fa-users"></i> Leadership</a>
+      <a href='index.html' class="bLink nvl"><i class="fa-solid fa-house-chimney"></i> Home</a>
+      <a href='apply.html' class="bLink nvl"><i class="fa-solid fa-check"></i> Apply</a>
+      <a href='gallery.html' class="bLink nvl"><i class="fa-solid fa-images"></i> Gallery</a>
+      <a href='history.html' class="bLink nvl"><i class="fa-solid fa-book"></i> History</a>
+      <a href='leadership.html' class="bLink nvl"><i class="fa-solid fa-users"></i> Leadership</a>
       <div id="navsep"></div>
-      <a href="events.html"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
-      <a href='https://discord.gg/nzPCyRs'><i class="fa-brands fa-discord"></i> Join Discord</a>
-      <a href='https://www.youtube.com/c/DonFuer'><i class="fa-brands fa-youtube"></i> Youtube</a>
-      <a href='https://2b2t.miraheze.org/wiki/DonFuer'><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
+      <a href="events.html" class="bLink nvl"><i class="fa-solid fa-face-grin"></i> Get Involved</a>
+      <a href='https://discord.gg/nzPCyRs' class="bLink nvl"><i class="fa-brands fa-discord"></i> Join Discord</a>
+      <a href='https://www.youtube.com/c/DonFuer' class="bLink nvl"><i class="fa-brands fa-youtube"></i> Youtube</a>
+      <a href='https://2b2t.miraheze.org/wiki/DonFuer' class="bLink nvl"><i class="fa-solid fa-newspaper"></i> 2b2t Wiki</a>
     </nav>
     <div class='header rawbg' id='hed'>
       Apply</div>
     <div class='headspac'></div>
   </header>
   <div id="bg"></div>
+  <div id="0"></div>
+  <div id="1"></div>
+  <div id="2"></div>
+  <div id="3"></div>
   <div class="main" id="appmenu">
     <div class="col2grid">
-      <div>
+      <div class="rawbg appsel">
         <h2>Apply for 2b2t Spawn Rangers</h2>
         <p>DonFuer joined 2b2t in November 2016. Many of DonFuer's best bases have been on this server, including DonFuer 10, 11, 12, 18, 20, 21, and 22! Although its been through many ups and downs, the 2b2t DonFuer branch is the flagship of the group!</p>
-        <button class="appbtn rawbutton" onclick="apply('2B')">Apply Now</button>
+        <a class="appbtn rawbutton" href="#0" onclick="apply(0)">Apply Now</a>
       </div>
-      <div>
+      <div class="rawbg appsel">
         <h2>Apply for PhoenixAnarchy</h2>
         <p id='pa'>The Donfuer PhoenixAnarchy branch is the best for those who seek an anarchy experience but also want access to new features. PhoenixAnarchy is the biggest 1.18 anarchy server and averages 30-40 players on at a time, even maintaining 20 tps despite having a non-strict anticheat.</p>
-        <button class="appbtn rawbutton" onclick="apply('PA')">Apply Now</button>
+        <a class="appbtn rawbutton" href="#1" onclick="apply(1)">Apply Now</a>
       </div>
-      <div>
+      <div class="rawbg appsel">
         <h2>Apply for Stoneworks</h2>
         <p>One of the newest editions to the DonFuer Family, the Stoneworks server offers DonFuerians a unique roleplay experience, reminiscent of DonFuer's earlier days. If anarchy isn't for you this is the place to go.</p>
-        <button class="appbtn rawbutton" onclick="apply('SW')">Apply Now</button>
+        <a class="appbtn rawbutton" href="#2" onclick="apply(2)">Apply Now</a>
       </div>
-      <div>
+      <div class="rawbg appsel">
         <h2>Apply for 9b9t</h2>
         <p>After an extended absence from 9b9t, Donfuer is back and ready for more. This server is best for those who want to play on an anarchy server with us, without as much group complexity as our 2b2t branch.</p>
-        <button class="appbtn rawbutton" onclick="apply('9B')">Apply Now</button>
+        <a class="appbtn rawbutton" href="#3" onclick="apply(3)">Apply Now</a>
       </div>
     </div>
   </div>
