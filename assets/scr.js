@@ -1,3 +1,4 @@
+/*site by volker1*/
 const ua = navigator.userAgent;
 const ffn = document.getElementById("fireFoxFallBack");
 const nav = document.getElementById("nav");

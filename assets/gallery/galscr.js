@@ -1,3 +1,4 @@
+/*site by volker1*/
 const max = 8
 const max1 = 8
 const seq = document.getElementById('sequence')

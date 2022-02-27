@@ -1,3 +1,4 @@
+/*site by volker1*/
 :root{
     --fontfam:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --radsm:4px;
@@ -56,7 +57,7 @@ nav{
     margin:auto;background:var(--darkobs);width:60%;height:30px;border-radius:var(--radsm) var(--rad);
 }
 .header{
-    color:white;text-align:center;font-size:3rem;z-index:10;height:75px;
+    color:white;text-align:center;font-size:3rem;z-index:10;height:75px;/*site by volker1*/
     position:fixed;top:0px;left:15%;right:15%;width:auto;border-radius:0 0 var(--radlg) var(--radlg);
 }
 .headspac{
@@ -135,7 +136,7 @@ nav{
         display:flex;
     }
     .firefixed{
-        display:block;position:fixed;top:5px;left:5px;z-index:14;width:40px;height:40px;
+        display:block;position:fixed;top:5px;left:5px;/*site by volker1*/z-index:14;width:40px;height:40px;
         outline:0px;border:none;font-size:35px;color:white;background:none;cursor:pointer;
     }
 }

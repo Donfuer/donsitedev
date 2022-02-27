@@ -1,3 +1,4 @@
+/*site by volker1*/
 const winblur = document.getElementById("iw");
 const win = document.getElementById("infoWindow");
 const name = document.getElementById("infoName");
