@@ -53,6 +53,9 @@ nav{
     margin:auto;margin-top:10px;margin-bottom:10px;
     width:95%;
 }
+.act{
+    background:var(--null);color:black;
+}
 #navsep{
     margin:auto;background:var(--darkobs);width:60%;height:30px;border-radius:var(--radsm) var(--rad);
 }
