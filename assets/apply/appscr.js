@@ -4,6 +4,7 @@ const frameArr = ["https://docs.google.com/forms/d/e/1FAIpQLSd6j8_tkTxyQ8u5NwR_S
 "https://docs.google.com/forms/d/e/1FAIpQLSdZS3ppnm1n2cmFnEjZqqRmXKhNESbBYpvrMrYKk8d-nRp4AQ/viewform?embedded=true",
 "https://docs.google.com/forms/d/e/1FAIpQLSfj0F5rn6dvrEVnnZOP5qW898CTCRoZ9ZDSBtkAAp1-icx77w/viewform?embedded=true",
 ]
+//T
 const appFrame = document.getElementById('appframe')
 const app = document.getElementById('app')
 const bRow = document.getElementById("bRow")
