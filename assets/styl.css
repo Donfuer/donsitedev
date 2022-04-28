@@ -86,6 +86,7 @@ nav{
 #nb,#nbl{
     width:0px;height:0px;
 }
+/*good until 800x680*/
 @media only screen and (max-width:1300px){
     :root{
         --navwidth:20%;
@@ -103,33 +104,33 @@ nav{
     nav{
         position:fixed;top:55px;bottom:5px;display:none;width:var(--navwidth);
     }
-    #nb,#nbl{
+    #nb,#nbl,#nbxd{
       width:0px;height:0px;transition-duration:0.2s;cursor:pointer;
     }
-    #nb::before,#nb::after,#nbl::after{
+    #nbxd::before,#nbxd::after,#nbl::after{
       content:'';display:block;position:fixed;width:40px;height:5px;left:5px;z-index:13;
       background:white;border-radius:4px;transition-duration:0.1s;
     }
-    #nb::after{
+    #nbxd::after{
       top:35px;
     }
     #nbl::after{
       top:20px;
     }
-    #nb::before{
+    #nbxd::before{
       top:5px;
     }
     #nbl::before{
       content:'';display:block;position:fixed;top:0px;left:0px;width:50px;height:50px;z-index:12;
     }
       
-    #nb:checked::before,#nb:checked::after{
+    #nb:checked~#nbxd::before,#nb:checked~#nbxd::after{
       top:20px;left:0px;width:50px;
     }
-    #nb:checked::before{
+    #nb:checked~#nbxd::before{
       transform:rotate(45deg);
     }
-    #nb:checked::after{
+    #nb:checked~#nbxd::after{
       transform:rotate(135deg);
     }
     #nb:checked~#nbl::after{
@@ -137,10 +138,6 @@ nav{
     }
     #nb:checked~nav{
         display:flex;
-    }
-    .firefixed{
-        display:block;position:fixed;top:5px;left:5px;/*site by volker1*/z-index:14;width:40px;height:40px;
-        outline:0px;border:none;font-size:35px;color:white;background:none;cursor:pointer;
     }
 }
 
@@ -168,10 +165,4 @@ nav{
 }
 #sneak{
     height:50px;width:100%;
-}
-.firefixed:active{
-    color:var(--null);
-}
-.nofirefox{
-    display:none;
 }
