@@ -83,7 +83,7 @@ nav{
 #navshow{
     display:none;
 }
-#nb,#nbl{
+#nb,#nbl,#nbxd{
     width:0px;height:0px;
 }
 /*good until 800x680*/
@@ -93,9 +93,6 @@ nav{
     }
     .main{
         width:90%;
-    }
-    .col2grid{
-        grid-template-columns:100%;
     }
     .header{
         left:0px;right:0px;border-radius:0;
@@ -140,7 +137,11 @@ nav{
         display:flex;
     }
 }
-
+@media only screen and (max-width:800px){
+  .col2grid{
+    grid-template-columns:100%;
+}
+}
 @media only screen and (max-width:500px){
     .main{
         width:100%;

@@ -5,6 +5,7 @@ const seq = document.getElementById('sequence')
 const seq1 = document.getElementById('sequencea')
 var num = 0
 var num1 = 0
+
 img = e => {
   switch(e){
     case 0:
@@ -32,6 +33,7 @@ img = e => {
     break
   }
 }
+
 setStyle = (id,num) => {
   return `background-image:url(window${id}/${num}.webp)`
 }

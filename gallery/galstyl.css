@@ -1,8 +1,12 @@
 /*site by volker1*/
 .seq{
-  background-color:white;background-repeat:no-repeat;background-size:cover;aspect-ratio:16/9;
-  position:relative;border-radius:var(--rad);
-  display:block;padding:0px !important;transition-duration:0.2s;
+  background-color:transparent;background-repeat:no-repeat;background-size:cover;aspect-ratio:16/9;
+  position:relative;display:block;
+}
+.sequ{
+  background-color:transparent;background-repeat:no-repeat;background-size:cover;
+  position:absolute;inset:0px 0px 0px 0px;border-radius:var(--rad);
+  padding:0px !important;transition-duration:0.2s;
 }
 .container {
   display: grid; 
@@ -27,7 +31,7 @@
 }
 .seq button{
   display:block;width:30%;height:100%;z-index:2;
-  background:transparent;border:none;
+  background:transparent;border:none;outline:none;
 }
 .b0:hover{
   background:linear-gradient(to right, var(--darkosc),transparent,transparent);
@@ -46,7 +50,7 @@
 .single img{
   width:100%;border-radius:var(--rad);display:block;
 }
-@media only screen and (max-width:1300px){
+@media only screen and (max-width:800px){
   .container {
       display: grid;
       grid-template-columns: 100%;
@@ -91,4 +95,22 @@
 .headspan{
   max-width:600px;margin:auto;padding:10px;
   text-align:center;margin-top:20px;border-radius:var(--radlg);
+}
+.loadingAnim{
+  display:flex;flex-flow:row nowrap;position:absolute;inset:30% 30% 30% 30%;
+  background-color:transparent;justify-content:center;
+}
+.loadingAnim span{
+  font-size:10rem;margin:auto;color:dodgerblue;
+  animation-name: circleAnim;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes circleAnim {
+  0% {transform:rotate(0deg)}
+  25% {transform:rotate(90deg)}
+  50% {transform:rotate(180deg)}
+  75% {transform:rotate(270deg)}
+  100% {transform:rotate(360deg)}
 }
