@@ -30,7 +30,7 @@
   position:absolute;top:10px;left:10px;color:var(--null);z-index:1;
 }
 .seq button{
-  display:block;width:30%;height:100%;z-index:2;
+  display:block;width:30%;height:100%;z-index:2;cursor:pointer;
   background:transparent;border:none;outline:none;
 }
 .b0:hover{
