@@ -14,12 +14,15 @@ if (urla.length == 1){
   apply(urla)
 }
 function apply(b){
+  alert("Hey! We moved the application process to our Public discord server! Join by clicking the discord link on the site!")
+  /*
   app.src = frameArr[b]
   document.getElementById("appmenu").style.display = "none"
   document.getElementById("appwin").style.display = "block"
   appFrame.style.display = "block"
   app.style.display = "block"
   bRow.style.display = "flex"
+  */
 }
 function topApp(){
   appFrame.style.display = "none"
