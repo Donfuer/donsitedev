@@ -14,7 +14,8 @@ h2{
     text-align: center;
 }
 .elders div:hover {
-    filter: brightness(1.2);
+    filter: brightness(1.3);
+    outline: 1px solid #AAAAAAAA;
 }
 .elders img {
     width: 100%;
