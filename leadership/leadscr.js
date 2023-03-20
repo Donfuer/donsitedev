@@ -54,7 +54,7 @@ for (let leader of leadership) {
     elem.classList = "rawbg"
 
     image = document.createElement("img")
-    image.src = `skins/${leader.image}`
+    image.src = `./skins/${leader.image}`
     image.alt = `${leader.name}'s skin`
     elem.appendChild(image)
 
