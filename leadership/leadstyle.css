@@ -7,13 +7,23 @@ h2{
     text-align:center;
 }
 .elders div{
-    min-width:200px;
+    width:200px;
+    border-radius:var(--rad);
+    box-sizing: border-box;
+    padding: 1vw;
+    text-align: center;
+}
+.elders div:hover {
+    filter: brightness(1.2);
+}
+.elders img {
+    width: 100%;
 }
 .col2grid .rawbg{
     padding:0px;
 }
 .elders{
-    box-sizing:border-box;padding:3%;margin:3%;border-radius:var(--rad);
+    box-sizing:border-box;padding:3vw;border-radius:var(--rad);
 }
 .expltxt{
     padding:3%;margin:3%;border-radius:var(--rad);text-align:center;
