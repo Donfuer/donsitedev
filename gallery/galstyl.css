@@ -93,7 +93,7 @@
 }
 .single,.single img{margin:auto;}
 .headspan{
-  max-width:600px;margin:auto;padding:10px;
+  max-width:600px;margin:auto;padding:10px;background: var(--bgtrans);
   text-align:center;margin-top:20px;border-radius:var(--radlg);
 }
 .loadingAnim{

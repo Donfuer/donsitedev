@@ -6,13 +6,21 @@ h2{
     display:flex;position:relative;flex-flow:row wrap;justify-content:space-around;
     text-align:center;
 }
+
+.elders{
+    gap: 20px;
+    --rad:20px;
+}
+
 .elders div{
     width:200px;
     border-radius:var(--rad);
     box-sizing: border-box;
     padding: 1vw;
     text-align: center;
+    background: var(--bgtrans)
 }
+
 .elders div:hover {
     filter: brightness(1.3);
     outline: 1px solid #AAAAAAAA;
@@ -24,10 +32,10 @@ h2{
     padding:0px;
 }
 .elders{
-    box-sizing:border-box;padding:3vw;border-radius:var(--rad);
+    box-sizing:border-box;padding:3vw;border-radius:var(--rad);background: #ffffff00;
 }
 .expltxt{
-    padding:3%;margin:3%;border-radius:var(--rad);text-align:center;
+    padding:3%;margin:3%;border-radius:25px;text-align:center;background: rgba(255, 255, 255, 0.025);
 }
 .rawbutton{
     width:100%;font-size:1rem;

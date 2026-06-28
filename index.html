@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donfuer | Home</title>
   <link rel="stylesheet" href="assets/styl.css">
-  <link rel="icon" href="assets/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="assets/indstyl.css">
+  <link rel="icon" href="assets/newIcon.png" type="image/x-icon">
   <meta name="title" content="Donfuer.com">
   <meta name="description" content="Donfuer is a multi-server Minecraft building group. Apply today!">
   <meta name="keywords" content="Minecraft, Minecraft building, Minecraft group">
@@ -17,67 +16,99 @@
   <meta name="author" content="volker1">
   <style>
     #bg{
-      background:url(assets/img/EmbeddedImage.webp) no-repeat;
-      background-size: cover;
+      background:linear-gradient(rgba(8,8,10,0.25),rgba(8,8,10,0.4)), url(assets/bases/donfuer28shader2.png) center/cover no-repeat fixed;
+      opacity:1;
     }
   </style>
 </head>
 <body>
-  <header>
-    <input type="checkbox" id="nb">
-    <label for="nb" id="nbl"></label>
-    <label for="nb" id="nbxd"></label>
-    <nav class='rawbg' id='nav'>
-      <a href='../' class="bLink nvl act"><sub>home</sub> Home</a>
-      <a href='../apply' class="bLink nvl"><sub>userPlus</sub> Apply</a>
-      <a href='../gallery' class="bLink nvl"><sub>image</sub> Gallery</a>
-      <a href='../history' class="bLink nvl"><sub>book</sub> History</a>
-      <a href='../leadership' class="bLink nvl"><sub>users</sub> Leadership</a>
-      <div id="navsep"></div>
-      <a href="../more" class="bLink nvl"><sub>more</sub> More</a>
-      <a href='../discord' class="bLink nvl"><sub>discord</sub> Join Discord</a>
-      <a href='https://www.youtube.com/c/DonFuer' class="bLink nvl"><sub>youtube</sub> Youtube</a>
-      <a href='https://2b2t.miraheze.org/wiki/DonFuer' class="bLink nvl"><sub>news</sub> 2b2t Wiki</a>
-    </nav>
-    <div class='header rawbg'>
-      Home
+  <div id="bg"></div>
+
+  <div class="window">
+    <div class="titlebar">
+      <img src="assets/newIcon.png" alt="DonFuer logo">
+      <div class="titletext">
+        <h1>DonFuer</h1>
+        <span>Minecraft's oldest active building group</span>
+      </div>
     </div>
-    <div class='headspac'></div>
-  </header>
-  <div id="bg" style="opacity:1;"></div>
-  <div class='main'>
-    <div class="col2grid">
-      <div class="rawbg">
-        <h2>About Us</h2>
-        <a class='bLink' href='gallery/'>Our Gallery</a>
-        <a class='bLink' href='history/'>Our History</a>
-        <a class='bLink' href='leadership/'>Our Leadership</a>
-      </div>
-      <div class='med'>
-        <iframe class="indvideo" width="100%" height="100%" src="https://www.youtube.com/embed/6q2G0n-Yn0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div><!--Site by volker1-->
-      <div class="rawbg">
-        <h2>Get Involved</h2>
-        <a class='bLink' href='apply/'>Join Us Today</a>
-        <a class='bLink' href='more/'>Participate</a>
-      </div>
-      <div class='med'>
-        <iframe class="indvideo" width="100%" height="100%" src="https://www.youtube.com/embed/4v-uu74cgzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div><!--Site by volker1-->
-      <div class='med'>
-        <iframe class="indvideo" width="100%" height="100%" src="https://www.youtube.com/embed/TSjg97eztCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class='med'>
-        <iframe class="indvideo" width="100%" height="100%" src="https://www.youtube.com/embed/leI11hySanc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div>
-        <img src="assets/img/1.webp">
-      </div>
-      <div>
-        <img src="assets/img/2.webp">
-      </div>
+
+    <div class="body">
+      <aside class="side">
+        <nav class="rawbg" id="nav">
+          <div class="group">Main Content</div>
+          <a href='./' class="bLink nvl act"><sub>home</sub> Home</a>
+          <a href='apply/' class="bLink nvl"><sub>userPlus</sub> Apply</a>
+          <a href='gallery/' class="bLink nvl"><sub>image</sub> Gallery</a>
+          <a href='../wiki' class="bLink nvl"><sub>book</sub> Wiki</a>
+          <a href='leadership/' class="bLink nvl"><sub>users</sub> Leadership</a>
+          <div class="group">Community</div>
+          <a href="more/" class="bLink nvl"><sub>more</sub> More</a>
+          <a href='discord/' class="bLink nvl"><sub>discord</sub> Join Discord</a>
+          <a href='https://www.youtube.com/c/DonFuer' class="bLink nvl"><sub>youtube</sub> Youtube</a>
+          <a href='https://2b2t.miraheze.org/wiki/DonFuer' class="bLink nvl"><sub>news</sub> 2b2t Wiki</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="bar"><sub>home</sub> Home</div>
+
+        <section class="hero">
+          <img src="assets/grouppic1.png" alt="Donfuer group pic">
+          <div class="hero-text">
+            <h2>Est. 2013</h2>
+            <a class="cta" href="apply/">Apply Today</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <p class="intro">
+            Welcome to the DonFuer website. DonFuer is a Minecraft building group spanning multiple servers,
+            including 2b2t, Constantiam, Stoneworks, and more. The group was established in 2013 by D_Loaded.
+            On this site, you can explore the group's history and builds, as well as apply to join.
+          </p>
+        </section>
+
+        <section class="card">
+          <h3>Featured Videos</h3>
+          <div class="grid">
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wno3lXbj6M0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/6q2G0n-Yn0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/4v-uu74cgzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/TSjg97eztCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/leI11hySanc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="media"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/rIoqLB_6eXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          </div>
+        </section>
+
+        <section class="cards-2">
+          <div class="card">
+            <h3>About Us</h3>
+            <a class='bLink' href='gallery/'><sub>image</sub> Our Gallery</a>
+            <a class='bLink' href='history/'><sub>book</sub> Our History</a>
+            <a class='bLink' href='leadership/'><sub>users</sub> Our Leadership</a>
+          </div>
+          <div class="card">
+            <h3>Get Involved</h3>
+            <a class='bLink' href='apply/'><sub>userPlus</sub> Join Us Today</a>
+            <a class='bLink' href='more/'><sub>more</sub> Participate</a>
+            <a class='bLink' href='discord/'><sub>discord</sub> Join Our Discord</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>Screenshots</h3>
+          <div class="grid">
+            <div class="shot"><img src="assets/bases/donfuer28shader.png" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/donfuer25shader1.png" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/donfuer27shader2.png" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/redcastleshader.png" alt="DonFuer screenshot"></div>
+          </div>
+        </section>
+      </main>
     </div>
   </div>
+
   <script src="assets/icons.js"></script>
 </body>
 </html>

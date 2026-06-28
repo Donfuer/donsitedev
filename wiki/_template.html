@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- (1) change the page title -->
+  <title>New Page DonFuer Wiki</title>
+  <link rel="stylesheet" href="/wiki/wiki.css">
+  <link rel="icon" href="/assets/newIcon.png" type="image/x-icon">
+</head>
+<!--
+  (2) data-crumb  = breadcrumb label shown in the top bar.
+      data-active = sidebar key to highlight, 
+      ONLY if this page is one of the sidebar sections,
+      Leave it empty for a normal article.
+-->
+<body data-active="" data-crumb="New Page">
+  <!-- (3) Everything inside <article> is your page. The header, sidebar and
+           footer are added automatically by wiki.js, don't add them here. -->
+  <article class="article">
+    <h1>New Page</h1>
+    <p class="subtitle">One-line description of this page.</p>
+
+    <p class="lead">Opening paragraph introducing the topic.</p>
+
+    <h2>A section</h2>
+    <p>Body text. Link to other wiki pages like <a href="/wiki/history/">this</a>.</p>
+
+    <p><a href="/wiki/">&larr; Back to the Main Page</a></p>
+  </article>
+
+  <!-- builds the shared chrome, leave this last -->
+  <script src="/wiki/wiki.js"></script>
+</body>
+</html>

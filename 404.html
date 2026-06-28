@@ -5,9 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donfuer | 404</title>
-  <link rel="stylesheet" href="assets/styl.css">
-  <link rel="icon" href="assets/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="assets/index/indstyl.css">
+  <link rel="stylesheet" href="/assets/styl.css">
+  <link rel="icon" href="/assets/icon.png" type="image/x-icon">
   <meta name="title" content="Donfuer.com">
   <meta name="description" content="Donfuer is a multi-server Minecraft building group. Apply today!">
   <meta name="keywords" content="Minecraft, Minecraft building, Minecraft group">
@@ -17,8 +16,8 @@
   <meta name="author" content="volker1">
   <style>
     #bg{
-      background:url(assets/index/EmbeddedImage.webp) no-repeat;
-      background-size: cover;
+      background:linear-gradient(rgba(8,8,10,.45),rgba(8,8,10,.78)), url(/assets/bases/donfuer28shader.png) center/cover no-repeat fixed;
+      opacity:1;
     }
     .mein{
       padding:10px;text-align:center;border-radius:var(--rad);
@@ -26,33 +25,42 @@
   </style>
 </head>
 <body>
-  <header>
-    <input type="checkbox" id="nb">
-    <label for="nb" id="nbl"></label>
-    <label for="nb" id="nbxd"></label>
-    <nav class='rawbg' id='nav'>
-      <a href='../' class="bLink nvl"><sub>home</sub> Home</a>
-      <a href='../apply' class="bLink nvl"><sub>userPlus</sub> Apply</a>
-      <a href='../gallery' class="bLink nvl"><sub>image</sub> Gallery</a>
-      <a href='../history' class="bLink nvl"><sub>book</sub> History</a>
-      <a href='../leadership' class="bLink nvl"><sub>users</sub> Leadership</a>
-      <div id="navsep"></div>
-      <a href="../more" class="bLink nvl"><sub>more</sub> More</a>
-      <a href='../discord' class="bLink nvl"><sub>discord</sub> Join Discord</a>
-      <a href='https://www.youtube.com/c/DonFuer' class="bLink nvl"><sub>youtube</sub> Youtube</a>
-      <a href='https://2b2t.miraheze.org/wiki/DonFuer' class="bLink nvl"><sub>news</sub> 2b2t Wiki</a>
-    </nav>
-    <div class='header rawbg'>
-      404
+  <div id="bg"></div>
+  <div class="window">
+    <div class="titlebar">
+      <img src="/assets/icon.png" alt="DonFuer logo">
+      <div class="titletext">
+        <h1>DonFuer</h1>
+        <span>A multi-server Minecraft building group</span>
+      </div>
     </div>
-    <div class='headspac'></div>
-  </header>
-  <div class="main">
-    <div class="rawbg mein">
-      <h1>Page not found!</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
+    <div class="body">
+      <aside class="side">
+        <nav class="rawbg" id="nav">
+          <div class="group">Main Content</div>
+          <a href='/' class="bLink nvl"><sub>home</sub> Home</a>
+          <a href='/apply' class="bLink nvl"><sub>userPlus</sub> Apply</a>
+          <a href='/gallery' class="bLink nvl"><sub>image</sub> Gallery</a>
+          <a href='/history' class="bLink nvl"><sub>book</sub> History</a>
+          <a href='/leadership' class="bLink nvl"><sub>users</sub> Leadership</a>
+          <div class="group">Community</div>
+          <a href="/more" class="bLink nvl"><sub>more</sub> More</a>
+          <a href='/discord' class="bLink nvl"><sub>discord</sub> Join Discord</a>
+          <a href='https://www.youtube.com/c/DonFuer' class="bLink nvl"><sub>youtube</sub> Youtube</a>
+          <a href='https://2b2t.miraheze.org/wiki/DonFuer' class="bLink nvl"><sub>news</sub> 2b2t Wiki</a>
+        </nav>
+      </aside>
+      <main class="content">
+        <div class="bar"><sub>news</sub> 404</div>
+        <div class="main">
+          <div class="rawbg mein">
+            <h1>Page not found!</h1>
+            <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
+          </div>
+        </div>
+      </main>
     </div>
   </div>
-  <script src="assets/icons.js"></script>
+  <script src="/assets/icons.js"></script>
 </body>
 </html>

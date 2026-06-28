@@ -3,7 +3,7 @@ img{
   border-radius:var(--rad);width:100%;
 }
 .panel{
-  background:var(--darkosc);color:white;
+  background:var(--bgtrans);color: white;
   padding-bottom:4rem;
 }
 .panel h2{
@@ -16,7 +16,7 @@ img{
   font-size:1.1em;
 }
 .base{
-  background:var(--darktrans);border-radius:var(--rad);
+  background:var(--bgtrans);border-radius:var(--rad);
   padding:5px;padding-top:3px;
 }
 .container{
