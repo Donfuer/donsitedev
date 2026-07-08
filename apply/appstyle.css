@@ -22,11 +22,6 @@ h2{
     box-shadow:inset 0 1px 0 rgba(255,255,255,.22);
 }
 
-/*  yes I know stupid way to do this*/
-.content {
-    height: 430px;
-}
-
 .appbtn:hover{
     transform:translateY(1px);
     background:var(--gloss),var(--trans-h);border-color:rgba(255,255,255,.28);

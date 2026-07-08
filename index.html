@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donfuer | Home</title>
   <link rel="stylesheet" href="assets/styl.css">
-  <link rel="icon" href="assets/newIcon.png" type="image/x-icon">
+  <link rel="icon" href="assets/icon1.png" type="image/x-icon">
   <meta name="title" content="Donfuer.com">
   <meta name="description" content="Donfuer is a multi-server Minecraft building group. Apply today!">
   <meta name="keywords" content="Minecraft, Minecraft building, Minecraft group">
@@ -16,7 +16,7 @@
   <meta name="author" content="volker1">
   <style>
     #bg{
-      background:linear-gradient(rgba(8,8,10,0.25),rgba(8,8,10,0.4)), url(assets/bases/donfuer28shader2.png) center/cover no-repeat fixed;
+      background:linear-gradient(rgba(8,8,10,0.25),rgba(8,8,10,0.4)), url(assets/bases/donfuer28shader2.webp) center/cover no-repeat fixed;
       opacity:1;
     }
   </style>
@@ -26,13 +26,15 @@
 
   <div class="window">
     <div class="titlebar">
-      <img src="assets/newIcon.png" alt="DonFuer logo">
+      <label for="nb" id="nbl" aria-label="Toggle menu"><sub>menu</sub></label>
+      <img src="assets/icon1.png" alt="DonFuer logo">
       <div class="titletext">
         <h1>DonFuer</h1>
         <span>Minecraft's oldest active building group</span>
       </div>
     </div>
 
+    <input type="checkbox" id="nb">
     <div class="body">
       <aside class="side">
         <nav class="rawbg" id="nav">
@@ -40,8 +42,10 @@
           <a href='./' class="bLink nvl act"><sub>home</sub> Home</a>
           <a href='apply/' class="bLink nvl"><sub>userPlus</sub> Apply</a>
           <a href='gallery/' class="bLink nvl"><sub>image</sub> Gallery</a>
-          <a href='../wiki' class="bLink nvl"><sub>book</sub> Wiki</a>
+          <a href='history/' class="bLink nvl"><sub>book</sub> History</a>
+          <a href='bases/' class="bLink nvl"><sub>multiple</sub> Bases</a>
           <a href='leadership/' class="bLink nvl"><sub>users</sub> Leadership</a>
+          <a href='about/' class="bLink nvl"><sub>info</sub> About</a>
           <div class="group">Community</div>
           <a href="more/" class="bLink nvl"><sub>more</sub> More</a>
           <a href='discord/' class="bLink nvl"><sub>discord</sub> Join Discord</a>
@@ -52,14 +56,12 @@
 
       <main class="content">
         <div class="bar"><sub>home</sub> Home</div>
-
-        <section class="hero">
-          <img src="assets/grouppic1.png" alt="Donfuer group pic">
+        <a class="hero" href="apply/" aria-label="Apply to DonFuer">
+          <img src="assets/grouppic1.webp" alt="Donfuer group pic">
           <div class="hero-text">
-            <h2>Est. 2013</h2>
-            <a class="cta" href="apply/">Apply Today</a>
+            <h2>Join Today!</h2>
           </div>
-        </section>
+        </a>
 
         <section class="card">
           <p class="intro">
@@ -87,11 +89,12 @@
             <a class='bLink' href='gallery/'><sub>image</sub> Our Gallery</a>
             <a class='bLink' href='history/'><sub>book</sub> Our History</a>
             <a class='bLink' href='leadership/'><sub>users</sub> Our Leadership</a>
+            <a class='bLink' href='about/'><sub>info</sub> About</a>
           </div>
           <div class="card">
             <h3>Get Involved</h3>
             <a class='bLink' href='apply/'><sub>userPlus</sub> Join Us Today</a>
-            <a class='bLink' href='more/'><sub>more</sub> Participate</a>
+            <a class='bLink' href='more/'><sub>more</sub> More</a>
             <a class='bLink' href='discord/'><sub>discord</sub> Join Our Discord</a>
           </div>
         </section>
@@ -99,10 +102,10 @@
         <section class="card">
           <h3>Screenshots</h3>
           <div class="grid">
-            <div class="shot"><img src="assets/bases/donfuer28shader.png" alt="DonFuer screenshot"></div>
-            <div class="shot"><img src="assets/bases/donfuer25shader1.png" alt="DonFuer screenshot"></div>
-            <div class="shot"><img src="assets/bases/donfuer27shader2.png" alt="DonFuer screenshot"></div>
-            <div class="shot"><img src="assets/bases/redcastleshader.png" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/donfuer28shader.webp" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/donfuer25shader1.webp" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/donfuer27shader2.webp" alt="DonFuer screenshot"></div>
+            <div class="shot"><img src="assets/bases/redcastleshader.webp" alt="DonFuer screenshot"></div>
           </div>
         </section>
       </main>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donfuer | Gallery</title>
   <link rel="stylesheet" href="../assets/styl.css">
-  <link rel="icon" href="../assets/newIcon.png" type="image/x-icon">
+  <link rel="icon" href="../assets/icon1.png" type="image/x-icon">
   <link rel="stylesheet" href="galstyl.css">
   <meta name="title" content="Donfuer.com">
   <meta name="description" content="Donfuer gallery">
@@ -17,7 +17,7 @@
   <meta name="author" content="volker1">
   <style>
     #bg {
-      background: url(../assets/bases/donfuer22shader.png) no-repeat;
+      background: url(../assets/bases/donfuer22shader.webp) no-repeat;
       background-size: cover;
     }
   </style>
@@ -26,12 +26,14 @@
   <div id="bg"></div>
   <div class="window">
     <div class="titlebar">
-      <img src="../assets/newIcon.png" alt="DonFuer logo">
+      <label for="nb" id="nbl" aria-label="Toggle menu"><sub>menu</sub></label>
+      <img src="../assets/icon1.png" alt="DonFuer logo">
       <div class="titletext">
         <h1>DonFuer</h1>
         <span>Minecraft's oldest active building group</span>
       </div>
     </div>
+    <input type="checkbox" id="nb">
     <div class="body">
       <aside class="side">
         <nav class="rawbg" id="nav">
@@ -39,8 +41,10 @@
           <a href='../' class="bLink nvl"><sub>home</sub> Home</a>
           <a href='../apply' class="bLink nvl"><sub>userPlus</sub> Apply</a>
           <a href='../gallery' class="bLink nvl act"><sub>image</sub> Gallery</a>
-          <a href='../wiki' class="bLink nvl"><sub>book</sub> Wiki</a>
+          <a href='../history' class="bLink nvl"><sub>book</sub> History</a>
+          <a href='../bases' class="bLink nvl"><sub>multiple</sub> Bases</a>
           <a href='../leadership' class="bLink nvl"><sub>users</sub> Leadership</a>
+          <a href='../about' class="bLink nvl"><sub>info</sub> About</a>
           <div class="group">Community</div>
           <a href="../more" class="bLink nvl"><sub>more</sub> More</a>
           <a href='../discord' class="bLink nvl"><sub>discord</sub> Join Discord</a>
