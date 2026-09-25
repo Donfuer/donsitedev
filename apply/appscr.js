@@ -13,9 +13,6 @@ urla = urla.slice((urla.lastIndexOf("#")+1),urla.length)
 if (urla.length == 1){
   apply(urla)
 }
-
-//unnecessary
-//actually this entire file is pretty useless
 function apply(b){
   alert("Hey! We moved the application process to our Public discord server! Join by clicking the discord link on the site!")
   /*
@@ -27,8 +24,6 @@ function apply(b){
   bRow.style.display = "flex"
   */
 }
-
-
 function topApp(){
   appFrame.style.display = "none"
   var e = setTimeout(()=>{appFrame.style.display="block"},1)
