@@ -26,6 +26,11 @@ const leadership = [
         name: "Volker1",
         blurb: "After a couple years of dormancy on 2b2t, volker1 decided to return and \"actually escape spawn this time for realz\". He applied to DonFuer's newly created Spawn Rangers group and made many friends, both in the group and out. He was very active, and was invited to DonFuer 21 with a couple friends. D_loaded eventually offered him leadership of Spawn Rangers, which he accepted. He set to work improving the group by building a new website from the ground up, getting more high-ranking Donfuerians active in Rangers, and more.",
         image: "volker.png"
+    },
+    {
+        name: "Ajhastoes",
+        blurb: "leader of the Donfuer stoneworks branch, & expert at finance",
+        image: "ajhastoes.png"
     }
 ]
 
