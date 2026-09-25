@@ -18,29 +18,9 @@ const leadership = [
         namemc: "https://mine.ly/D_loaded.1"
     },
     {
-        name: "DirectorJohnson",
-        blurb: "In April of 2017, a personal friend of MikelAx7 showed him videos about 2b2t. He was mildly interested but dismissive. 3 hours of playtime and 11 hours of queue later, he was hooked. After showing dragonworm the server weeks later, he followed him to Highland and later Donfuer. His membership record was spotty but now he fully committed his playtime to the success of Donfuer. He also created the former DonFuer website and is a developer of the DonHack client. He recently changed his IGN to DirectorJohnson.",
-        image: "director-johnson.png"
-    },
-    {
         name: "Dragonworm",
         blurb: "Dragonworm got Minecraft when he was a kid in 2010. He learned about 2b2t from his IRL friend MikelAx7, both of them joining the group Highland. Things would quickly sour with Highland, and soon after he joined Donfuer. Dragonworm quickly became an elder after joining by proving his loyalty to D_loaded in a series of crusades on MozartRealms. Since then, he has managed the online presence of Donfuer. He is currently the 3rd oldest Donfuer member that is still around.",
         image: "dragonworm.png"
-    },
-    {
-        name: "Lukent",
-        blurb: "Lukent applied to DonFuer in May 2022 after a first failed short stint in the group in November 2021. After slowly gaining trust within DonFuer he would be invited to DonFuer 23 in June 2022. His contributions to the group so far have been improving the group's wealth, and doing administration in the group with D_loaded",
-        image: "lukent.png"
-    },
-    {
-        name: "N8TT",
-        blurb: "In April 2022, N8TT discovered the DonFuer ranger base Katadalanfrantaranfueristan and was invited to join the group by Joetheblue. Though offered an immediate promotion to Ranger rank, N8TT opted to start as a scout and quickly proved himself by contributing to projects like the rebuilding of Aureus City and DonFuer 25. His hard work and dedication earned him the respect of the DonFuer community, and he remains a valued member of the group.",
-        image: "nate.png"
-    },
-    {
-        name: "TimeOfWheel",
-        blurb: "TimeOfWheel joined Donfuer in April 2020 on a server called DMC. After that server closed the branch moved to NetherAnarchy. Following NetherAnarchy's subsequent closure TimeOfWheel created the Phoenix Anarchy branch and is currently leading that branch.",
-        image: "time-wheel.png"
     },
     {
         name: "Volker1",
